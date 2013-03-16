@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="utf-8">
-    <title>Sticky footer &middot; Twitter Bootstrap</title>
+    <title>고정 꼬리말 &middot; 트위터 부트스트랩</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- CSS -->
-    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap-ko.css" rel="stylesheet">
     <style type="text/css">
 
-      /* Sticky footer styles
+      /* 고정 꼬리말 스타일
       -------------------------------------------------- */
 
       html,
       body {
         height: 100%;
-        /* The html and body elements cannot have any padding or margin. */
+        /* html과 body 태그는 패딩과 여백을 가지면 안된다. */
       }
 
-      /* Wrapper for page content to push down footer */
+      /* 꼬리말을 아래로 보내기위해 페이지 본문을 감쌈  */
       #wrap {
         min-height: 100%;
         height: auto !important;
@@ -29,7 +29,7 @@
         margin: 0 auto -60px;
       }
 
-      /* Set the fixed height of the footer here */
+      /* 여기서 꼬리말의 고정높이를 설정 */
       #push,
       #footer {
         height: 60px;
@@ -38,7 +38,7 @@
         background-color: #f5f5f5;
       }
 
-      /* Lastly, apply responsive CSS fixes as necessary */
+      /* 마지막으로 필요하다면 반응형 CSS 보정을 적용 */
       @media (max-width: 767px) {
         #footer {
           margin-left: -20px;
@@ -50,9 +50,9 @@
 
 
 
-      /* Custom page CSS
+      /* 이 페이지를 위한 CSS
       -------------------------------------------------- */
-      /* Not required for template or sticky footer method. */
+      /* 틀이나 고정 꼬리말과 무관함. */
 
       .container {
         width: auto;
@@ -65,12 +65,12 @@
     </style>
     <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!-- IE6~8에서 HTML5 태그를 지원하기위한 HTML5 shim -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="../assets/js/html5shiv.js"></script>
     <![endif]-->
 
-    <!-- Fav and touch icons -->
+    <!-- 파비콘과 앱 아이콘 -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
@@ -81,15 +81,16 @@
   <body>
 
 
-    <!-- Part 1: Wrap all page content here -->
+    <!-- 1 단계: 모든 페이지 내용을 여기에 감싼다 -->
     <div id="wrap">
 
       <!-- Begin page content -->
       <div class="container">
         <div class="page-header">
-          <h1>Sticky footer</h1>
+          <h1>고정 꼬리말</h1>
         </div>
-        <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS.</p>
+        <p class="lead">HTML과 CSS를 이렇게 수정하여 데스크탑 웹브라우저 화면 하단에 고정높이 꼬리말을 고정한다.</p>
+        <p>고정 탐색막대도 필요하면, 고정 탐색막대가 있는 <a href="./sticky-footer-navbar.html">고정 꼬리말</a>을 사용하라.</p>
       </div>
 
       <div id="push"></div>
@@ -97,15 +98,15 @@
 
     <div id="footer">
       <div class="container">
-        <p class="muted credit">Example courtesy <a href="http://martinbean.co.uk">Martin Bean</a> and <a href="http://ryanfait.com/sticky-footer/">Ryan Fait</a>.</p>
+        <p class="muted credit">예제는 <a href="http://martinbean.co.uk">마틴 빈</a>과 <a href="http://ryanfait.com/sticky-footer/">라이언 페이트</a>가 제공.</p>
       </div>
     </div>
 
 
 
-    <!-- Le javascript
+    <!-- 자바스크립트
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- 페이지를 빨리 읽어들이도록 문서 마지막에 배치 -->
     <script src="../assets/js/jquery.js"></script>
     <script src="../assets/js/bootstrap-transition.js"></script>
     <script src="../assets/js/bootstrap-alert.js"></script>

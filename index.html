@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap</title>
+    <title>부트스트랩</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- Le styles -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- 스타일 -->
+    <link href="assets/css/bootstrap-ko.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/css/docs-ko.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!-- IE6~8에서 HTML5 태그를 지원하기위한 HTML5 shim -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="assets/js/html5shiv.js"></script>
     <![endif]-->
 
-    <!-- Le fav and touch icons -->
+    <!-- 파비콘과 앱 아이콘 -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
@@ -26,6 +26,7 @@
                                    <link rel="shortcut icon" href="assets/ico/favicon.png">
 
     <script type="text/javascript">
+      window['ga-disable-UA-146052-10'] = true;
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-146052-10']);
       _gaq.push(['_trackPageview']);
@@ -49,29 +50,29 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="./index.html">Bootstrap</a>
+          <a class="brand" href="./index.html">부트스트랩</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active">
-                <a href="./index.html">Home</a>
+                <a href="./index.html">대문</a>
               </li>
               <li class="">
-                <a href="./getting-started.html">Get started</a>
+                <a href="./getting-started.html">시작하기</a>
               </li>
               <li class="">
-                <a href="./scaffolding.html">Scaffolding</a>
+                <a href="./scaffolding.html">틀 만들기</a>
               </li>
               <li class="">
-                <a href="./base-css.html">Base CSS</a>
+                <a href="./base-css.html">기본 CSS</a>
               </li>
               <li class="">
-                <a href="./components.html">Components</a>
+                <a href="./components.html">화면 구성요소</a>
               </li>
               <li class="">
-                <a href="./javascript.html">JavaScript</a>
+                <a href="./javascript.html">자바스크립트</a>
               </li>
               <li class="">
-                <a href="./customize.html">Customize</a>
+                <a href="./customize.html">맞춤 다운로드</a>
               </li>
             </ul>
           </div>
@@ -81,23 +82,23 @@
 
 <div class="jumbotron masthead">
   <div class="container">
-    <h1>Bootstrap</h1>
-    <p>Sleek, intuitive, and powerful front-end framework for faster and easier web development.</p>
+    <h1>부트스트랩</h1>
+    <p>더 빠르고 쉬운 웹개발을 위한 세련되고 직관적이며 강력한 프레임워크.</p>
     <p>
-      <a href="assets/bootstrap.zip" class="btn btn-primary btn-large" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Download', 'Download 2.2.2']);">Download Bootstrap</a>
+      <a href="assets/bootstrap.zip" class="btn btn-primary btn-large" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Download', 'Download 2.3.1']);">부트스트랩 다운로드</a>
     </p>
     <ul class="masthead-links">
       <li>
-        <a href="http://github.com/twitter/bootstrap" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'GitHub project']);">GitHub project</a>
+        <a href="http://github.com/twitter/bootstrap" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'GitHub project']);">GitHub 프로젝트</a>
       </li>
       <li>
-        <a href="./getting-started.html#examples" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Examples']);">Examples</a>
+        <a href="./getting-started.html#examples" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Examples']);">예제</a>
       </li>
       <li>
-        <a href="./extend.html" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Extend']);">Extend</a>
+        <a href="./extend.html" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Extend']);">확장</a>
       </li>
       <li>
-        Version 2.2.2
+        2.3.1 버전
       </li>
     </ul>
   </div>
@@ -126,31 +127,31 @@
 
   <div class="marketing">
 
-    <h1>Introducing Bootstrap.</h1>
-    <p class="marketing-byline">Need reasons to love Bootstrap? Look no further.</p>
+    <h1>부트스트랩을 소개합니다.</h1>
+    <p class="marketing-byline">부트스트랩을 사랑할 수 밖에 없는 이유.</p>
 
     <div class="row-fluid">
       <div class="span4">
         <img class="marketing-img" src="assets/img/bs-docs-twitter-github.png">
-        <h2>By nerds, for nerds.</h2>
-        <p>Built at Twitter by <a href="http://twitter.com/mdo">@mdo</a> and <a href="http://twitter.com/fat">@fat</a>, Bootstrap utilizes <a href="http://lesscss.org">LESS CSS</a>, is compiled via <a href="http://nodejs.org">Node</a>, and is managed through <a href="http://github.com">GitHub</a> to help nerds do awesome stuff on the web.</p>
+        <h2>너드가, 너드를 위한.</h2>
+        <p>트위터에 다니는 <a href="http://twitter.com/mdo">@mdo</a>와 <a href="http://twitter.com/fat">@fat</a>이 만든 부트스트랩은, <a href="http://nodejs.org">Node</a>로 컴파일한 <a href="http://lesscss.org">LESS CSS</a>를 사용하고, <a href="http://github.com">GitHub</a>로 관리합니다. 부트스트랩은 웹에서 굉장한 일을 하도록 너드를 돕습니다.</p>
       </div>
       <div class="span4">
         <img class="marketing-img" src="assets/img/bs-docs-responsive-illustrations.png">
-        <h2>Made for everyone.</h2>
-        <p>Bootstrap was made to not only look and behave great in the latest desktop browsers (as well as IE7!), but in tablet and smartphone browsers via <a href="./scaffolding.html#responsive">responsive CSS</a> as well.</p>
+        <h2>모두에게 맞춤.</h2>
+        <p>부트스트랩은 최신 데스크탑 브라우저뿐 아니라 <a href="./scaffolding.html#responsive">반응형 CSS</a>를 통해 타블렛과 스마트폰 브라우저에서도 멋지게 보이고 동작하도록 만들었습니다. (이 화면의 폭을 줄여보세요.)</p>
       </div>
       <div class="span4">
         <img class="marketing-img" src="assets/img/bs-docs-bootstrap-features.png">
-        <h2>Packed with features.</h2>
-        <p>A 12-column responsive <a href="./scaffolding.html#gridSystem">grid</a>, dozens of components, <a href="./javascript.html">JavaScript plugins</a>, typography, form controls, and even a <a href="./customize.html">web-based Customizer</a> to make Bootstrap your own.</p>
+        <h2>알찬 기능들.</h2>
+        <p>12열 반응형 <a href="./scaffolding.html#gridSystem">격자</a>, 다양한 화면 구성요소, <a href="./javascript.html">자바스크립트 플러그인</a>, 타이포그래피, 양식 입력요소, 심지어 맞춤형 부트스트랩을 만드는 <a href="./customize.html">웹기반 주문</a>까지.</p>
       </div>
     </div>
 
     <hr class="soften">
 
-    <h1>Built with Bootstrap.</h1>
-    <p class="marketing-byline">For even more sites built with Bootstrap, <a href="http://builtwithbootstrap.tumblr.com/" target="_blank">visit the unofficial Tumblr</a> or <a href="./getting-started.html#examples">browse the examples</a>.</p>
+    <h1>부트스트랩으로 만들었어요.</h1>
+    <p class="marketing-byline">부트스트랩으로 만든 사이트를 더 보려면, <a href="http://builtwithbootstrap.tumblr.com/" target="_blank">비공식 텀블러를 방문</a>하거나 <a href="./getting-started.html#examples">예제를 둘러보세요</a>.</p>
     <div class="row-fluid">
       <ul class="thumbnails example-sites">
         <li class="span3">
@@ -186,24 +187,24 @@
     ================================================== -->
     <footer class="footer">
       <div class="container">
-        <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
-        <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-        <p><a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p><a href="http://twitter.com/mdo" target="_blank">@mdo</a>와 <a href="http://twitter.com/fat" target="_blank">@fat</a>가 온세상의 사랑을 담아 디자인하고 만듬.</p>
+        <p>소스 라이선스는 <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">아파치 라이선스 v2.0</a>, 문서는 <a href="http://creativecommons.org/licenses/by/3.0/">크리에이티브 커먼즈 3.0</a>.</p>
+        <p><a href="http://glyphicons.com">글리피콘스 프리</a>의 라이선스는 <a href="http://creativecommons.org/licenses/by/3.0/">크리에이티브 커먼즈 3.0</a>.</p>
         <ul class="footer-links">
-          <li><a href="http://blog.getbootstrap.com">Blog</a></li>
+          <li><a href="http://blog.getbootstrap.com">블로그</a></li>
           <li class="muted">&middot;</li>
-          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Issues</a></li>
+          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">문제점</a></li>
           <li class="muted">&middot;</li>
-          <li><a href="https://github.com/twitter/bootstrap/wiki">Roadmap and changelog</a></li>
+          <li><a href="https://github.com/twitter/bootstrap/blob/master/CHANGELOG.md">수정사항</a></li>
         </ul>
       </div>
     </footer>
 
 
 
-    <!-- Le javascript
+    <!-- 자바스크립트
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- 페이지를 빨리 읽어들이도록 문서 마지막에 배치 -->
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap-transition.js"></script>
@@ -226,9 +227,9 @@
     <script src="assets/js/application.js"></script>
 
 
-    <!-- Analytics
+    <!-- 웹로그 분석
     ================================================== -->
-    <script>
+    <!--<script>
       var _gauges = _gauges || [];
       (function() {
         var t   = document.createElement('script');
@@ -240,7 +241,7 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(t, s);
       })();
-    </script>
+    </script>-->
 
   </body>
 </html>

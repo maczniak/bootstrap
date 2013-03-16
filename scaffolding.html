@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="utf-8">
-    <title>Scaffolding · Bootstrap</title>
+    <title>틀 만들기 · 부트스트랩</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- Le styles -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- 스타일 -->
+    <link href="assets/css/bootstrap-ko.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/css/docs-ko.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!-- IE6~8에서 HTML5 태그를 지원하기위한 HTML5 shim -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="assets/js/html5shiv.js"></script>
     <![endif]-->
 
-    <!-- Le fav and touch icons -->
+    <!-- 파비콘과 앱 아이콘 -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
@@ -26,6 +26,7 @@
                                    <link rel="shortcut icon" href="assets/ico/favicon.png">
 
     <script type="text/javascript">
+      window['ga-disable-UA-146052-10'] = true;
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-146052-10']);
       _gaq.push(['_trackPageview']);
@@ -49,29 +50,29 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="./index.html">Bootstrap</a>
+          <a class="brand" href="./index.html">부트스트랩</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="">
-                <a href="./index.html">Home</a>
+                <a href="./index.html">대문</a>
               </li>
               <li class="">
-                <a href="./getting-started.html">Get started</a>
+                <a href="./getting-started.html">시작하기</a>
               </li>
               <li class="active">
-                <a href="./scaffolding.html">Scaffolding</a>
+                <a href="./scaffolding.html">틀 만들기</a>
               </li>
               <li class="">
-                <a href="./base-css.html">Base CSS</a>
+                <a href="./base-css.html">기본 CSS</a>
               </li>
               <li class="">
-                <a href="./components.html">Components</a>
+                <a href="./components.html">화면 구성요소</a>
               </li>
               <li class="">
-                <a href="./javascript.html">JavaScript</a>
+                <a href="./javascript.html">자바스크립트</a>
               </li>
               <li class="">
-                <a href="./customize.html">Customize</a>
+                <a href="./customize.html">맞춤 다운로드</a>
               </li>
             </ul>
           </div>
@@ -83,8 +84,8 @@
 ================================================== -->
 <header class="jumbotron subhead" id="overview">
   <div class="container">
-    <h1>Scaffolding</h1>
-    <p class="lead">Bootstrap is built on responsive 12-column grids, layouts, and components.</p>
+    <h1>틀 만들기</h1>
+    <p class="lead">반응형 12개 열 격자와 레이아웃 그리고 화면 구성요소들을 기반으로 삼는다.</p>
   </div>
 </header>
 
@@ -95,60 +96,60 @@
     <div class="row">
       <div class="span3 bs-docs-sidebar">
         <ul class="nav nav-list bs-docs-sidenav">
-          <li><a href="#global"><i class="icon-chevron-right"></i> Global styles</a></li>
-          <li><a href="#gridSystem"><i class="icon-chevron-right"></i> Grid system</a></li>
-          <li><a href="#fluidGridSystem"><i class="icon-chevron-right"></i> Fluid grid system</a></li>
-          <li><a href="#layouts"><i class="icon-chevron-right"></i> Layouts</a></li>
-          <li><a href="#responsive"><i class="icon-chevron-right"></i> Responsive design</a></li>
+          <li><a href="#global"><i class="icon-chevron-right"></i> 전체 스타일</a></li>
+          <li><a href="#gridSystem"><i class="icon-chevron-right"></i> 격자 방식</a></li>
+          <li><a href="#fluidGridSystem"><i class="icon-chevron-right"></i> 유동 격자 방식</a></li>
+          <li><a href="#layouts"><i class="icon-chevron-right"></i> 레이아웃</a></li>
+          <li><a href="#responsive"><i class="icon-chevron-right"></i> 반응형 디자인</a></li>
         </ul>
       </div>
       <div class="span9">
 
 
 
-        <!-- Global Bootstrap settings
+        <!-- 전체 부트스트랩 설정
         ================================================== -->
         <section id="global">
           <div class="page-header">
-            <h1>Global settings</h1>
+            <h1>전체 설정</h1>
           </div>
 
-          <h3>Requires HTML5 doctype</h3>
-          <p>Bootstrap makes use of certain HTML elements and CSS properties that require the use of the HTML5 doctype. Include it at the beginning of all your projects.</p>
+          <h3>HTML5 doctype 필요</h3>
+          <p>부트스트랩은 HTML5 doctype이 필요한 일부 HTML 태그와 CSS 속성을 사용한다. 그래서 모든 프로젝트 제일 앞에 써준다.</p>
 <pre class="prettyprint linenums">
 &lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
+&lt;html lang="ko"&gt;
   ...
 &lt;/html&gt;
 </pre>
 
-          <h3>Typography and links</h3>
-          <p>Bootstrap sets basic global display, typography, and link styles. Specifically, we:</p>
+          <h3>타이포그래피와 링크</h3>
+          <p>부트스트랩은 기본적인 전체 표시 스타일과 글꼴 스타일과 링크 스타일을 설정한다. 구체적으로,</p>
           <ul>
-            <li>Remove <code>margin</code> on the body</li>
-            <li>Set <code>background-color: white;</code> on the <code>body</code></li>
-            <li>Use the <code>@baseFontFamily</code>, <code>@baseFontSize</code>, and <code>@baseLineHeight</code> attributes as our typographic base</li>
-            <li>Set the global link color via <code>@linkColor</code> and apply link underlines only on <code>:hover</code></li>
+            <li>body에서 <code>margin</code> 제거</li>
+            <li><code>body</code>에 <code>background-color: white;</code> 설정</li>
+            <li>글꼴의 기본으로 삼을 <code>@baseFontFamily</code>, <code>@baseFontSize</code>, <code>@baseLineHeight</code> 속성 사용</li>
+            <li><code>@linkColor</code>로 전체 링크 색깔을 설정하고, <code>:hover</code>할 때만 링크 밑줄 적용</li>
           </ul>
-          <p>These styles can be found within <strong>scaffolding.less</strong>.</p>
+          <p>이 스타일은 <strong>scaffolding.less</strong> 안에 있다.</p>
 
-          <h3>Reset via Normalize</h3>
-          <p>With Bootstrap 2, the old reset block has been dropped in favor of <a href="http://necolas.github.com/normalize.css/" target="_blank">Normalize.css</a>, a project by <a href="http://twitter.com/necolas" target="_blank">Nicolas Gallagher</a> and <a href="http://twitter.com/jon_neal" target="_blank">Jonathan Neal</a> that also powers the <a href="http://html5boilerplate.com" target="_blank">HTML5 Boilerplate</a>. While we use much of Normalize within our <strong>reset.less</strong>, we have removed some elements specifically for Bootstrap.</p>
+          <h3>Normalize로 초기화</h3>
+          <p>부트스트랩 버전 2에서 예전 초기화 블록이 사라지고 대신 <a href="http://necolas.github.com/normalize.css/" target="_blank">Normalize.css</a>를 사용한다. Normalize.css는 <a href="http://html5boilerplate.com" target="_blank">HTML5 Boilerplate</a>를 만들기도 한 <a href="http://twitter.com/necolas" target="_blank">Nicolas Gallagher</a>와 <a href="http://twitter.com/jon_neal" target="_blank">Jonathan Neal</a>이 시작한 프로젝트이다. <strong>reset.less</strong>에서 Normalize의 많은 부분을 사용하지만, 부트스트랩을 위해 일부분을 제외했다.</p>
 
         </section>
 
 
 
 
-        <!-- Grid system
+        <!-- 격자 방식
         ================================================== -->
         <section id="gridSystem">
           <div class="page-header">
-            <h1>Default grid system</h1>
+            <h1>기본 격자 방식</h1>
           </div>
 
-          <h2>Live grid example</h2>
-          <p>The default Bootstrap grid system utilizes <strong>12 columns</strong>, making for a 940px wide container without <a href="./scaffolding.html#responsive">responsive features</a> enabled. With the responsive CSS file added, the grid adapts to be 724px and 1170px wide depending on your viewport. Below 767px viewports, the columns become fluid and stack vertically.</p>
+          <h2>격자 예제</h2>
+          <p>부트스트랩의 기본 격자는 <a href="./scaffolding.html#responsive">반응형 기능</a> 없이 940px 폭의 공간에 <strong>열 12개</strong>를 만든다. 반응형 CSS 파일을 추가하면, 화면에 따라 724px과 1170px 폭으로 격자를 맞춘다. 767px 미만 화면에서 열은 유동적이 되어 수직으로 쌓인다.</p>
           <div class="bs-docs-grid">
             <div class="row show-grid">
               <div class="span1">1</div>
@@ -175,29 +176,29 @@
             </div>
           </div>
 
-          <h3>Basic grid HTML</h3>
-          <p>For a simple two column layout, create a <code>.row</code> and add the appropriate number of <code>.span*</code> columns. As this is a 12-column grid, each <code>.span*</code> spans a number of those 12 columns, and should always add up to 12 for each row (or the number of columns in the parent).</p>
+          <h3>기본 격자 HTML</h3>
+          <p>간단한 열 두개 레이아웃을 만들려면, <code>.row</code> 안에 <code>.span*</code> 열들을 적절히 추가한다. 12개 열 격자이기 때문에 <code>.span*</code> 들은 이 12개 열의 일부를 차지하고, 항상 행마다 합이 12가 (열 안에 열의 경우 감싼 열의 폭만큼) 되야 한다.</p>
 <pre class="prettyprint linenums">
 &lt;div class="row"&gt;
   &lt;div class="span4"&gt;...&lt;/div&gt;
   &lt;div class="span8"&gt;...&lt;/div&gt;
 &lt;/div&gt;
 </pre>
-          <p>Given this example, we have <code>.span4</code> and <code>.span8</code>, making for 12 total columns and a complete row.</p>
+          <p>이 예제에는 <code>.span4</code> 와 <code>.span8</code> 이 있다. 총 12 열이 되어 완전한 행을 이룬다.</p>
 
-          <h2>Offsetting columns</h2>
-          <p>Move columns to the right using <code>.offset*</code> classes. Each class increases the left margin of a column by a whole column. For example, <code>.offset4</code> moves <code>.span4</code> over four columns.</p>
+          <h2>열 위치 이동</h2>
+          <p><code>.offset*</code> 클래스를 사용하여 열을 오른쪽으로 이동한다. 클래스는 숫자만큼 열의 왼쪽 여벽을 늘린다. 예를 들어, <code>.offset4</code>는 <code>.span4</code>를 열 4개만큼 옮긴다.</p>
           <div class="bs-docs-grid">
             <div class="row show-grid">
               <div class="span4">4</div>
-              <div class="span3 offset2">3 offset 2</div>
+              <div class="span3 offset2">3 offset2</div>
             </div><!-- /row -->
             <div class="row show-grid">
-              <div class="span3 offset1">3 offset 1</div>
-              <div class="span3 offset2">3 offset 2</div>
+              <div class="span3 offset1">3 offset1</div>
+              <div class="span3 offset2">3 offset2</div>
             </div><!-- /row -->
             <div class="row show-grid">
-              <div class="span6 offset3">6 offset 3</div>
+              <div class="span6 offset3">6 offset3</div>
             </div><!-- /row -->
           </div>
 <pre class="prettyprint linenums">
@@ -207,17 +208,17 @@
 &lt;/div&gt;
 </pre>
 
-          <h2>Nesting columns</h2>
-          <p>To nest your content with the default grid, add a new <code>.row</code> and set of <code>.span*</code> columns within an existing <code>.span*</code> column. Nested rows should include a set of columns that add up to the number of columns of its parent.</p>
+          <h2>열 안에 열</h2>
+          <p>기본 격자 안에 내용을 감싸려면, 기존의 <code>.span*</code> 열 안에 새로운 <code>.row</code>와 <code>.span*</code> 열들을 추가한다. 안에 포함된 행의 열들을 합하면 감싸는 열의 숫자가 되야 한다.</p>
           <div class="row show-grid">
             <div class="span9">
-              Level 1 column
+              1단계 열
               <div class="row show-grid">
                 <div class="span6">
-                  Level 2
+                  2단계
                 </div>
                 <div class="span3">
-                  Level 2
+                  2단계
                 </div>
               </div>
             </div>
@@ -225,10 +226,10 @@
 <pre class="prettyprint linenums">
 &lt;div class="row"&gt;
   &lt;div class="span9"&gt;
-    Level 1 column
+    1단계 열
     &lt;div class="row"&gt;
-      &lt;div class="span6"&gt;Level 2&lt;/div&gt;
-      &lt;div class="span3"&gt;Level 2&lt;/div&gt;
+      &lt;div class="span6"&gt;2단계&lt;/div&gt;
+      &lt;div class="span3"&gt;2단계&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -237,15 +238,15 @@
 
 
 
-        <!-- Fluid grid system
+        <!-- 유동 격자 방식
         ================================================== -->
         <section id="fluidGridSystem">
           <div class="page-header">
-            <h1>Fluid grid system</h1>
+            <h1>유동 격자 방식</h1>
           </div>
 
-          <h2>Live fluid grid example</h2>
-          <p>The fluid grid system uses percents instead of pixels for column widths. It has the same responsive capabilities as our fixed grid system, ensuring proper proportions for key screen resolutions and devices.</p>
+          <h2>유동 격자 예제</h2>
+          <p>유동 격자 방식은 열의 폭으로 픽셀 대신 비율을 사용한다. 고정 격자 방식과 마찬가지로, 중요한 화면해상도와 장치에서 제대로 된 균형을 보여주는 반응형 기능이 있다.</p>
           <div class="bs-docs-grid">
             <div class="row-fluid show-grid">
               <div class="span1">1</div>
@@ -279,8 +280,8 @@
             </div>
           </div>
 
-          <h3>Basic fluid grid HTML</h3>
-          <p>Make any row "fluid" by changing <code>.row</code> to <code>.row-fluid</code>. The column classes stay the exact same, making it easy to flip between fixed and fluid grids.</p>
+          <h3>기본 유동 격자 HTML</h3>
+          <p>행을 "유동"으로 만들려면, <code>.row</code>를 <code>.row-fluid</code>로 변경한다. 열의 클래스는 동일하게 유지되어 고정 격자와 유동 격자 사이를 쉽게 오갈 수 있다.</p>
 <pre class="prettyprint linenums">
 &lt;div class="row-fluid"&gt;
   &lt;div class="span4"&gt;...&lt;/div&gt;
@@ -288,19 +289,19 @@
 &lt;/div&gt;
 </pre>
 
-          <h2>Fluid offsetting</h2>
-          <p>Operates the same way as the fixed grid system offsetting: add <code>.offset*</code> to any column to offset by that many columns.</p>
+          <h2>유동 열 위치 이동</h2>
+          <p>고정 격자 방식의 열 위치 이동과 동일하다. 열에 <code>.offset*</code>을 붙여서 그만큼 열을 이동한다.</p>
           <div class="bs-docs-grid">
             <div class="row-fluid show-grid">
               <div class="span4">4</div>
-              <div class="span4 offset4">4 offset 4</div>
+              <div class="span4 offset4">4 offset4</div>
             </div><!-- /row -->
             <div class="row-fluid show-grid">
-              <div class="span3 offset3">3 offset 3</div>
-              <div class="span3 offset3">3 offset 3</div>
+              <div class="span3 offset3">3 offset3</div>
+              <div class="span3 offset3">3 offset3</div>
             </div><!-- /row -->
             <div class="row-fluid show-grid">
-              <div class="span6 offset6">6 offset 6</div>
+              <div class="span6 offset6">6 offset6</div>
             </div><!-- /row -->
           </div>
 <pre class="prettyprint linenums">
@@ -310,8 +311,8 @@
 &lt;/div&gt;
 </pre>
 
-          <h2>Fluid nesting</h2>
-          <p>Fluid grids utilize nesting differently: each nested level of columns should add up to 12 columns. This is because the fluid grid uses percentages, not pixels, for setting widths.</p>
+          <h2>유동 열 안에 열</h2>
+          <p>유동 격자에서 열 안에 열은 다르게 동작한다. 어떤 단계의 열도 합이 12 열이 되야 한다. 유동 격자가 픽셀이 아니라 비율로 폭을 설정하기 때문이다.</p>
           <div class="row-fluid show-grid">
             <div class="span12">
               Fluid 12
@@ -336,16 +337,16 @@
 <pre class="prettyprint linenums">
 &lt;div class="row-fluid"&gt;
   &lt;div class="span12"&gt;
-    Fluid 12
+    유동 12
     &lt;div class="row-fluid"&gt;
       &lt;div class="span6"&gt;
-        Fluid 6
+        유동 6
         &lt;div class="row-fluid"&gt;
-          &lt;div class="span6"&gt;Fluid 6&lt;/div&gt;
-          &lt;div class="span6"&gt;Fluid 6&lt;/div&gt;
+          &lt;div class="span6"&gt;유동 6&lt;/div&gt;
+          &lt;div class="span6"&gt;유동 6&lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
-      &lt;div class="span6"&gt;Fluid 6&lt;/div&gt;
+      &lt;div class="span6"&gt;유동 6&lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -356,15 +357,15 @@
 
 
 
-        <!-- Layouts (Default and fluid)
+        <!-- 레이아웃 (기본과 유동)
         ================================================== -->
         <section id="layouts">
           <div class="page-header">
-            <h1>Layouts</h1>
+            <h1>레이아웃</h1>
           </div>
 
-          <h2>Fixed layout</h2>
-          <p>Provides a common fixed-width (and optionally responsive) layout with only <code>&lt;div class="container"&gt;</code> required.</p>
+          <h2>고정 레이아웃</h2>
+          <p><code>&lt;div class="container"&gt;</code> 만으로 평범한 고정폭 (반응형 여부는 선택적) 레이아웃이 만들어진다.</p>
           <div class="mini-layout">
             <div class="mini-layout-body"></div>
           </div>
@@ -376,8 +377,8 @@
 &lt;/body&gt;
 </pre>
 
-          <h2>Fluid layout</h2>
-          <p>Create a fluid, two-column page with <code>&lt;div class="container-fluid"&gt;</code>&mdash;great for applications and docs.</p>
+          <h2>유동 레이아웃</h2>
+          <p><code>&lt;div class="container-fluid"&gt;</code>로 어플리케이션과 문서로 사용하기 좋은 유동적인 열 두개 페이지를 만든다.</p>
           <div class="mini-layout fluid">
             <div class="mini-layout-sidebar"></div>
             <div class="mini-layout-body"></div>
@@ -386,10 +387,10 @@
 &lt;div class="container-fluid"&gt;
   &lt;div class="row-fluid"&gt;
     &lt;div class="span2"&gt;
-      &lt;!--Sidebar content--&gt;
+      &lt;!--사이드바 내용--&gt;
     &lt;/div&gt;
     &lt;div class="span10"&gt;
-      &lt;!--Body content--&gt;
+      &lt;!--본문 내용--&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -399,157 +400,157 @@
 
 
 
-        <!-- Responsive design
+        <!-- 반응형 디자인
         ================================================== -->
         <section id="responsive">
           <div class="page-header">
-            <h1>Responsive design</h1>
+            <h1>반응형 디자인</h1>
           </div>
 
-          <h2>Enabling responsive features</h2>
-          <p>Turn on responsive CSS in your project by including the proper meta tag and additional stylesheet within the <code>&lt;head&gt;</code> of your document. If you've compiled Bootstrap from the Customize page, you need only include the meta tag.</p>
+          <h2>반응형 기능 사용</h2>
+          <p>문서의 <code>&lt;head&gt;</code> 안에 적절한 메타 태그와 스타일시트를 더하면 반응형 CSS가 동작한다. 맞춤 다운로드 페이지에서 부트스트랩을 컴파일했다면, 메타 태그만 추가하면 된다.</p>
 <pre class="prettyprint linenums">
 &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
 &lt;link href="assets/css/bootstrap-responsive.css" rel="stylesheet"&gt;
 </pre>
-          <p><span class="label label-info">Heads up!</span>  Bootstrap doesn't include responsive features by default at this time as not everything needs to be responsive. Instead of encouraging developers to remove this feature, we figure it best to enable it as needed.</p>
+          <p><span class="label label-info">주의!</span>  모두가 반응형일 필요가 없기 때문에 현재 부트스트랩은 반응형 기능을 기본으로 포함하지 않는다. 개발자가 이 기능을 제거하도록 안내하기 보다는 필요할 때 사용하는게 최선이라고 판단했다.</p>
 
-          <h2>About responsive Bootstrap</h2>
+          <h2>반응형 부트스트랩이란?</h2>
           <img src="assets/img/responsive-illustrations.png" alt="Responsive devices" style="float: right; margin: 0 0 20px 20px;">
-          <p>Media queries allow for custom CSS based on a number of conditions&mdash;ratios, widths, display type, etc&mdash;but usually focuses around <code>min-width</code> and <code>max-width</code>.</p>
+          <p>미디어선택(media query)를 통해 화면비율, 폭, 디스플레이 종류 등 다양한 조건에 따른 맞춤 CSS가 가능하지만, 보통 <code>min-width</code>와 <code>max-width</code>만 사용한다.</p>
           <ul>
-            <li>Modify the width of column in our grid</li>
-            <li>Stack elements instead of float wherever necessary</li>
-            <li>Resize headings and text to be more appropriate for devices</li>
+            <li>격자에서 열의 폭 변경</li>
+            <li>필요하다면 요소들을 유동 대신 위아래로 쌓음</li>
+            <li>장치에 적합하게 제목과 본문 크기 조절</li>
           </ul>
-          <p>Use media queries responsibly and only as a start to your mobile audiences. For larger projects, do consider dedicated code bases and not layers of media queries.</p>
+          <p>미디어선택을 단지 모바일 사용자 지원의 첫걸음으로 자제하여 사용하라. 큰 프로젝트라면 미디어선택을 층층이 쌓기 보다는 각각을 위한 전용 코드를 고려하라.</p>
 
-          <h2>Supported devices</h2>
-          <p>Bootstrap supports a handful of media queries in a single file to help make your projects more appropriate on different devices and screen resolutions. Here's what's included:</p>
+          <h2>장치 지원</h2>
+          <p>부트스트랩은 프로젝트가 여러 장치와 화면해상도에 적합하도록 한 파일에 여러 미디어선택을 지원한다. 이는 다음과 같다.</p>
           <table class="table table-bordered table-striped">
             <thead>
               <tr>
-                <th>Label</th>
-                <th>Layout width</th>
-                <th>Column width</th>
-                <th>Gutter width</th>
+                <th>라벨</th>
+                <th>레이아웃 폭</th>
+                <th>열 폭</th>
+                <th>열들 사이 폭</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Large display</td>
-                <td>1200px and up</td>
+                <td>큰 디스플레이</td>
+                <td>1200px 이상</td>
                 <td>70px</td>
                 <td>30px</td>
               </tr>
               <tr>
-                <td>Default</td>
-                <td>980px and up</td>
+                <td>기본값</td>
+                <td>980px 이상</td>
                 <td>60px</td>
                 <td>20px</td>
               </tr>
               <tr>
-                <td>Portrait tablets</td>
-                <td>768px and above</td>
+                <td>세로 방향 타블렛</td>
+                <td>768px 이상</td>
                 <td>42px</td>
                 <td>20px</td>
               </tr>
               <tr>
-                <td>Phones to tablets</td>
-                <td>767px and below</td>
-                <td class="muted" colspan="2">Fluid columns, no fixed widths</td>
+                <td>전화기부터 타블렛까지</td>
+                <td>767px 이하</td>
+                <td class="muted" colspan="2">유동 열, 고정폭 없음</td>
               </tr>
               <tr>
-                <td>Phones</td>
-                <td>480px and below</td>
-                <td class="muted" colspan="2">Fluid columns, no fixed widths</td>
+                <td>전화기</td>
+                <td>480px 이하</td>
+                <td class="muted" colspan="2">유동 열, 고정폭 없음</td>
               </tr>
             </tbody>
           </table>
 <pre class="prettyprint linenums">
-/* Large desktop */
+/* 큰 데스크탑 */
 @media (min-width: 1200px) { ... }
 
-/* Portrait tablet to landscape and desktop */
+/* 세로 방향 타블렛부터 가로 방향 타블렛과 데스크탑까지 */
 @media (min-width: 768px) and (max-width: 979px) { ... }
 
-/* Landscape phone to portrait tablet */
+/* 가로 방향 전화기부터 세로 방향 타블렛까지 */
 @media (max-width: 767px) { ... }
 
-/* Landscape phones and down */
+/* 가로 방향 전화기 이하 */
 @media (max-width: 480px) { ... }
 </pre>
 
 
-          <h2>Responsive utility classes</h2>
-          <p>For faster mobile-friendly development, use these utility classes for showing and hiding content by device. Below is a table of the available classes and their effect on a given media query layout (labeled by device). They can be found in <code>responsive.less</code>.</p>
+          <h2>반응형 도움 클래스</h2>
+          <p>빠르게 모바일을 지원하도록 개발하려면, 아래 도움 클래스들을 사용하여 장치에 따라 내용을 보이거나 숨긴다. 다음은 제공되는 클래스와 미디어선택 레이아웃에 따른 효과를 정리한 표이다. 이 설정은 <code>responsive.less</code> 안에 들어있다.</p>
           <table class="table table-bordered table-striped responsive-utilities">
             <thead>
               <tr>
-                <th>Class</th>
-                <th>Phones <small>767px and below</small></th>
-                <th>Tablets <small>979px to 768px</small></th>
-                <th>Desktops <small>Default</small></th>
+                <th>클래스</th>
+                <th>전화기 <small>767px 이하</small></th>
+                <th>타블렛 <small>979px ~ 768px</small></th>
+                <th>데스크탑 <small>기본값</small></th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th><code>.visible-phone</code></th>
-                <td class="is-visible">Visible</td>
-                <td class="is-hidden">Hidden</td>
-                <td class="is-hidden">Hidden</td>
+                <td class="is-visible">보임</td>
+                <td class="is-hidden">숨김</td>
+                <td class="is-hidden">숨김</td>
               </tr>
               <tr>
                 <th><code>.visible-tablet</code></th>
-                <td class="is-hidden">Hidden</td>
-                <td class="is-visible">Visible</td>
-                <td class="is-hidden">Hidden</td>
+                <td class="is-hidden">숨김</td>
+                <td class="is-visible">보임</td>
+                <td class="is-hidden">숨김</td>
               </tr>
               <tr>
                 <th><code>.visible-desktop</code></th>
-                <td class="is-hidden">Hidden</td>
-                <td class="is-hidden">Hidden</td>
-                <td class="is-visible">Visible</td>
+                <td class="is-hidden">숨김</td>
+                <td class="is-hidden">숨김</td>
+                <td class="is-visible">보임</td>
               </tr>
               <tr>
                 <th><code>.hidden-phone</code></th>
-                <td class="is-hidden">Hidden</td>
-                <td class="is-visible">Visible</td>
-                <td class="is-visible">Visible</td>
+                <td class="is-hidden">숨김</td>
+                <td class="is-visible">보임</td>
+                <td class="is-visible">보임</td>
               </tr>
               <tr>
                 <th><code>.hidden-tablet</code></th>
-                <td class="is-visible">Visible</td>
-                <td class="is-hidden">Hidden</td>
-                <td class="is-visible">Visible</td>
+                <td class="is-visible">보임</td>
+                <td class="is-hidden">숨김</td>
+                <td class="is-visible">보임</td>
               </tr>
               <tr>
                 <th><code>.hidden-desktop</code></th>
-                <td class="is-visible">Visible</td>
-                <td class="is-visible">Visible</td>
-                <td class="is-hidden">Hidden</td>
+                <td class="is-visible">보임</td>
+                <td class="is-visible">보임</td>
+                <td class="is-hidden">숨김</td>
               </tr>
             </tbody>
           </table>
 
-          <h3>When to use</h3>
-          <p>Use on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device's presentation. Responsive utilities should not be used with tables, and as such are not supported.</p>
+          <h3>조언</h3>
+          <p>제한된 경우에 사용하고, 같은 사이트를 완전히 다르게 만드는 일을 피하라. 장치별 화면을 보완하기위해 사용하라. 반응형 기능은 지원하지 않기 때문에 표에 사용하면 안된다.</p>
 
-          <h3>Responsive utilities test case</h3>
-          <p>Resize your browser or load on different devices to test the above classes.</p>
-          <h4>Visible on...</h4>
-          <p>Green checkmarks indicate that class is visible in your current viewport.</p>
+          <h3>반응형 기능 시연</h3>
+          <p>위의 클래스들을 시험해보려면 웹브라우저 크기를 변경하거나 다른 장치에서 페이지를 읽어봐라.</p>
+          <h4>...에서는 보인다</h4>
+          <p>녹색 체크부호는 현재 화면에 어떤 클래스가 보일지 알려준다.</p>
           <ul class="responsive-utilities-test">
-            <li>Phone<span class="visible-phone">&#10004; Phone</span></li>
-            <li>Tablet<span class="visible-tablet">&#10004; Tablet</span></li>
-            <li>Desktop<span class="visible-desktop">&#10004; Desktop</span></li>
+            <li>전화기<span class="visible-phone">&#10004; 전화기</span></li>
+            <li>타블렛<span class="visible-tablet">&#10004; 타블렛</span></li>
+            <li>테스크탑<span class="visible-desktop">&#10004; 테스크탑</span></li>
           </ul>
-          <h4>Hidden on...</h4>
-          <p>Here, green checkmarks indicate that class is hidden in your current viewport.</p>
+          <h4>...에서는 안보인다</h4>
+          <p>여기서 녹색 체크부호는 현재 화면에 어떤 클래스가 안보일지 알려준다.</p>
           <ul class="responsive-utilities-test hidden-on">
-            <li>Phone<span class="hidden-phone">&#10004; Phone</span></li>
-            <li>Tablet<span class="hidden-tablet">&#10004; Tablet</span></li>
-            <li>Desktop<span class="hidden-desktop">&#10004; Desktop</span></li>
+            <li>전화기<span class="hidden-phone">&#10004; 전화기</span></li>
+            <li>타블렛<span class="hidden-tablet">&#10004; 타블렛</span></li>
+            <li>테스크탑<span class="hidden-desktop">&#10004; 테스크탑</span></li>
           </ul>
 
         </section>
@@ -567,24 +568,24 @@
     ================================================== -->
     <footer class="footer">
       <div class="container">
-        <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
-        <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-        <p><a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p><a href="http://twitter.com/mdo" target="_blank">@mdo</a>와 <a href="http://twitter.com/fat" target="_blank">@fat</a>가 온세상의 사랑을 담아 디자인하고 만듬.</p>
+        <p>소스 라이선스는 <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">아파치 라이선스 v2.0</a>, 문서는 <a href="http://creativecommons.org/licenses/by/3.0/">크리에이티브 커먼즈 3.0</a>.</p>
+        <p><a href="http://glyphicons.com">글리피콘스 프리</a>의 라이선스는 <a href="http://creativecommons.org/licenses/by/3.0/">크리에이티브 커먼즈 3.0</a>.</p>
         <ul class="footer-links">
-          <li><a href="http://blog.getbootstrap.com">Blog</a></li>
+          <li><a href="http://blog.getbootstrap.com">블로그</a></li>
           <li class="muted">&middot;</li>
-          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Issues</a></li>
+          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">문제점</a></li>
           <li class="muted">&middot;</li>
-          <li><a href="https://github.com/twitter/bootstrap/wiki">Roadmap and changelog</a></li>
+          <li><a href="https://github.com/twitter/bootstrap/blob/master/CHANGELOG.md">수정사항</a></li>
         </ul>
       </div>
     </footer>
 
 
 
-    <!-- Le javascript
+    <!-- 자바스크립트
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- 페이지를 빨리 읽어들이도록 문서 마지막에 배치 -->
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap-transition.js"></script>
@@ -607,9 +608,9 @@
     <script src="assets/js/application.js"></script>
 
 
-    <!-- Analytics
+    <!-- 웹로그 분석
     ================================================== -->
-    <script>
+    <!--<script>
       var _gauges = _gauges || [];
       (function() {
         var t   = document.createElement('script');
@@ -621,7 +622,7 @@
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(t, s);
       })();
-    </script>
+    </script>-->
 
   </body>
 </html>

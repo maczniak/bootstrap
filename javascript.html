@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="utf-8">
-    <title>Javascript · Bootstrap</title>
+    <title>자바스크립트 · 부트스트랩</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- Le styles -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <!-- 스타일 -->
+    <link href="assets/css/bootstrap-ko.css" rel="stylesheet">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/css/docs-ko.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!-- IE6~8에서 HTML5 태그를 지원하기위한 HTML5 shim -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="assets/js/html5shiv.js"></script>
     <![endif]-->
 
-    <!-- Le fav and touch icons -->
+    <!-- 파비콘과 앱 아이콘 -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
@@ -26,6 +26,7 @@
                                    <link rel="shortcut icon" href="assets/ico/favicon.png">
 
     <script type="text/javascript">
+      window['ga-disable-UA-146052-10'] = true;
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-146052-10']);
       _gaq.push(['_trackPageview']);
@@ -49,29 +50,29 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="./index.html">Bootstrap</a>
+          <a class="brand" href="./index.html">부트스트랩</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="">
-                <a href="./index.html">Home</a>
+                <a href="./index.html">대문</a>
               </li>
               <li class="">
-                <a href="./getting-started.html">Get started</a>
+                <a href="./getting-started.html">시작하기</a>
               </li>
               <li class="">
-                <a href="./scaffolding.html">Scaffolding</a>
+                <a href="./scaffolding.html">틀 만들기</a>
               </li>
               <li class="">
-                <a href="./base-css.html">Base CSS</a>
+                <a href="./base-css.html">기본 CSS</a>
               </li>
               <li class="">
-                <a href="./components.html">Components</a>
+                <a href="./components.html">화면 구성요소</a>
               </li>
               <li class="active">
-                <a href="./javascript.html">JavaScript</a>
+                <a href="./javascript.html">자바스크립트</a>
               </li>
               <li class="">
-                <a href="./customize.html">Customize</a>
+                <a href="./customize.html">맞춤 다운로드</a>
               </li>
             </ul>
           </div>
@@ -83,8 +84,8 @@
 ================================================== -->
 <header class="jumbotron subhead">
   <div class="container">
-    <h1>JavaScript</h1>
-    <p class="lead">Bring Bootstrap's components to life&mdash;now with 13 custom jQuery plugins.
+    <h1>자바스크립트</h1>
+    <p class="lead">이제 13개 맞춤 jQuery 플러그인을 사용하여 부트스트랩 화면 구성요소에 활력을 넣는다.
   </div>
 </header>
 
@@ -95,20 +96,20 @@
     <div class="row">
       <div class="span3 bs-docs-sidebar">
         <ul class="nav nav-list bs-docs-sidenav">
-          <li><a href="#overview"><i class="icon-chevron-right"></i> Overview</a></li>
-          <li><a href="#transitions"><i class="icon-chevron-right"></i> Transitions</a></li>
-          <li><a href="#modals"><i class="icon-chevron-right"></i> Modal</a></li>
-          <li><a href="#dropdowns"><i class="icon-chevron-right"></i> Dropdown</a></li>
-          <li><a href="#scrollspy"><i class="icon-chevron-right"></i> Scrollspy</a></li>
-          <li><a href="#tabs"><i class="icon-chevron-right"></i> Tab</a></li>
-          <li><a href="#tooltips"><i class="icon-chevron-right"></i> Tooltip</a></li>
-          <li><a href="#popovers"><i class="icon-chevron-right"></i> Popover</a></li>
-          <li><a href="#alerts"><i class="icon-chevron-right"></i> Alert</a></li>
-          <li><a href="#buttons"><i class="icon-chevron-right"></i> Button</a></li>
-          <li><a href="#collapse"><i class="icon-chevron-right"></i> Collapse</a></li>
-          <li><a href="#carousel"><i class="icon-chevron-right"></i> Carousel</a></li>
-          <li><a href="#typeahead"><i class="icon-chevron-right"></i> Typeahead</a></li>
-          <li><a href="#affix"><i class="icon-chevron-right"></i> Affix</a></li>
+          <li><a href="#overview"><i class="icon-chevron-right"></i> 개요</a></li>
+          <li><a href="#transitions"><i class="icon-chevron-right"></i> 전환</a></li>
+          <li><a href="#modals"><i class="icon-chevron-right"></i> 모달</a></li>
+          <li><a href="#dropdowns"><i class="icon-chevron-right"></i> 드롭다운</a></li>
+          <li><a href="#scrollspy"><i class="icon-chevron-right"></i> 스크롤 추적 (scrollspy)</a></li>
+          <li><a href="#tabs"><i class="icon-chevron-right"></i> 탭</a></li>
+          <li><a href="#tooltips"><i class="icon-chevron-right"></i> 툴팁</a></li>
+          <li><a href="#popovers"><i class="icon-chevron-right"></i> 팝오버</a></li>
+          <li><a href="#alerts"><i class="icon-chevron-right"></i> 경고</a></li>
+          <li><a href="#buttons"><i class="icon-chevron-right"></i> 버튼</a></li>
+          <li><a href="#collapse"><i class="icon-chevron-right"></i> 숨김 (collapse)</a></li>
+          <li><a href="#carousel"><i class="icon-chevron-right"></i> 회전광고판 (carousel)</a></li>
+          <li><a href="#typeahead"><i class="icon-chevron-right"></i> 자동완성 (typeahead)</a></li>
+          <li><a href="#affix"><i class="icon-chevron-right"></i> 애픽스 메뉴</a></li>
         </ul>
       </div>
       <div class="span9">
@@ -118,98 +119,98 @@
         ================================================== -->
         <section id="overview">
           <div class="page-header">
-            <h1>JavaScript in Bootstrap</h1>
+            <h1>부트스트랩 속 자바스크립트</h1>
           </div>
 
-          <h3>Individual or compiled</h3>
-          <p>Plugins can be included individually (though some have required dependencies), or all at once. Both <strong>bootstrap.js</strong> and <strong>bootstrap.min.js</strong> contain all plugins in a single file.</p>
+          <h3>개별 혹은 컴파일된 결과</h3>
+          <p>플러그인을 개별로 (일부 의존관계와 함께) 하나씩 포함할 수 있고, 한번에 모두 포함할 수도 있다. <strong>bootstrap.js</strong>와 <strong>bootstrap.min.js</strong>는 파일 하나에 모든 플러그인을 담고 있다.</p>
 
-          <h3>Data attributes</h3>
-          <p>You can use all Bootstrap plugins purely through the markup API without writing a single line of JavaScript. This is Bootstrap's first class API and should be your first consideration when using a plugin.</p>
+          <h3>Data 속성</h3>
+          <p>자바스크립트를 한 줄도 쓰지 않고 순수하게 마크업 API로만 모든 부트스트랩 플러그인을 사용할 수 있다. 이 방법은 부트스트랩에서 자동으로 동작하며 플러그인을 사용할 때 제임 처음으로 고려할 방법이다.</p>
 
-          <p>That said, in some situations it may be desirable to turn this functionality off. Therefore, we also provide the ability to disable the data attribute API by unbinding all events on the body namespaced with `'data-api'`. This looks like this:
+          <p>그러나 이 기능을 끄고 싶을 경우가 있다. 그래서 data 속성 API를 비활성하는 기능을 제공한다. 이렇게 body에 있는 `'data-api'` 이름공간의 모든 이벤트를 해제하면 된다.
           <pre class="prettyprint linenums">$('body').off('.data-api')</pre>
 
-          <p>Alternatively, to target a specific plugin, just include the plugin's name as a namespace along with the data-api namespace like this:</p>
+          <p>특정 플러그인을 지칭하려면, 이렇게 플러그인 이름과 data-api를 함께 이름공간으로 작성한다.</p>
           <pre class="prettyprint linenums">$('body').off('.alert.data-api')</pre>
 
-          <h3>Programmatic API</h3>
-          <p>We also believe you should be able to use all Bootstrap plugins purely through the JavaScript API. All public APIs are single, chainable methods, and return the collection acted upon.</p>
+          <h3>API 사용</h3>
+          <p>또한 순수하게 자바스크립트 API만으로 모든 부트스트랩 플러그인을 사용할 수 있다. 모든 공개 API는 하나로 연속된 메소드이고, 자신의 적용 대상을 반환한다.</p>
           <pre class="prettyprint linenums">$(".btn.danger").button("toggle").addClass("fat")</pre>
-          <p>All methods should accept an optional options object, a string which targets a particular method, or nothing (which initiates a plugin with default behavior):</p>
+          <p>모든 메소드는 파라미터로 옵션 객체나 특정 메소드를 지칭하는 문자열을 받을 수 있다. 파라미터가 없다면 기본 행동으로 플러그인을 시작한다.</p>
 <pre class="prettyprint linenums">
-$("#myModal").modal()                       // initialized with defaults
-$("#myModal").modal({ keyboard: false })   // initialized with no keyboard
-$("#myModal").modal('show')                // initializes and invokes show immediately</p>
+$("#myModal").modal()                       // 기본값으로 초기화
+$("#myModal").modal({ keyboard: false })   // 키보드 없이 초기화
+$("#myModal").modal('show')                // 초기화하고 즉시 show를 호출</p>
 </pre>
-          <p>Each plugin also exposes its raw constructor on a `Constructor` property: <code>$.fn.popover.Constructor</code>. If you'd like to get a particular plugin instance, retrieve it directly from an element: <code>$('[rel=popover]').data('popover')</code>.</p>
+          <p>또, 모든 플러그인은 `생성자` 속성 <code>$.fn.popover.Constructor</code>에 자신의 원래 생성자를 노출한다. <code>$('[rel=popover]').data('popover')</code> 식으로 태그로 부터 직접 특정 플러그인 인스턴스를 얻을 수 있다.</p>
 
-          <h3>No Conflict</h3>
-          <p>Sometimes it is necessary to use Bootstrap plugins with other UI frameworks. In these circumstances,  namespace collisions can occasionally occur. If this happens, you may call <code>.noConflict</code> on the plugin you wish to revert the value of.</p>
+          <h3>충돌 방지</h3>
+          <p>부트스트랩 플러그인을 다른 UI 프레임워크와 함께 사용하는 경우가 있다. 이런 상황에서 가끔 이름공간 충돌이 일어날 수 있다. 충돌이 발생하면, 되돌리고 싶은 플러그인에 <code>.noConflict</code>를 호출한다.</p>
 
 <pre class="prettyprint linenums">
-var bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value
-$.fn.bootstrapBtn = bootstrapButton            // give $().bootstrapBtn the bootstrap functionality
+var bootstrapButton = $.fn.button.noConflict() // $.fn.button 을 이전에 할당한 값으로 되돌린다
+$.fn.bootstrapBtn = bootstrapButton            // $().bootstrapBtn 에 부트스트랩 기능을 대입한다
 </pre>
 
-          <h3>Events</h3>
-          <p>Bootstrap provides custom events for most plugin's unique actions. Generally, these come in an infinitive and past participle form - where the infinitive (ex. <code>show</code>) is triggered at the start of an event, and its past participle form (ex. <code>shown</code>) is trigger on the completion of an action.</p>
-          <p>All infinitive events provide preventDefault functionality. This provides the ability to stop the execution of an action before it starts.</p>
+          <h3>이벤트</h3>
+          <p>부트스트랩은 플러그인의 고유 행동 대부분에 이벤트를 붙인다. 보통 이벤트 이름은 현재형과 과거분사형이다. 현재형(예, <code>show</code>)은 이벤트가 시작할 때 발동하고, 과거분사형(예, <code>shown</code>)은 행동이 마친 뒤 발동한다.</p>
+          <p>모든 현재형 이벤트는 preventDefault 기능이 있다. 이 기능은 행동이 시작하기 전에 행동의 실행을 중지한다.</p>
 <pre class="prettyprint linenums">
 $('#myModal').on('show', function (e) {
-    if (!data) return e.preventDefault() // stops modal from being shown
+    if (!data) return e.preventDefault() // 모달이 보이지 않게 막는다
 })
 </pre>
         </section>
 
 
 
-        <!-- Transitions
+        <!-- 전환
         ================================================== -->
         <section id="transitions">
           <div class="page-header">
-            <h1>Transitions <small>bootstrap-transition.js</small></h1>
+            <h1>전환 <small>bootstrap-transition.js</small></h1>
           </div>
-          <h3>About transitions</h3>
-          <p>For simple transition effects, include bootstrap-transition.js once alongside the other JS files. If you're using the compiled (or minified) bootstrap.js, there is no need to include this&mdash;it's already there.</p>
-          <h3>Use cases</h3>
-          <p>A few examples of the transition plugin:</p>
+          <h3>전환이란</h3>
+          <p>간단한 전환 효과를 원한다면, 다른 자바스크립트 파일과 함께 <strong>bootstrap-transition.js</strong>를 한번 포함하라. 컴파일된 (혹은 최소화된) <strong>bootstrap.js</strong>를 사용한다면 이미 들어있기 때문에 포함할 필요가 없다.</p>
+          <h3>용도</h3>
+          <p>전환 플러그인의 몇가지 사용예.</p>
           <ul>
-            <li>Sliding or fading in modals</li>
-            <li>Fading out tabs</li>
-            <li>Fading out alerts</li>
-            <li>Sliding carousel panes</li>
+            <li>모달 슬라이드와 페이드인</li>
+            <li>탭 페이드아웃</li>
+            <li>경고 페이드아웃</li>
+            <li>회전광고판 슬라이드</li>
           </ul>
 
         </section>
 
 
 
-        <!-- Modal
+        <!-- 모달
         ================================================== -->
         <section id="modals">
           <div class="page-header">
-            <h1>Modals <small>bootstrap-modal.js</small></h1>
+            <h1>모달 <small>bootstrap-modal.js</small></h1>
           </div>
 
 
-          <h2>Examples</h2>
-          <p>Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.</p>
+          <h2>사용예</h2>
+          <p>모달은 단순하지만 유연한 대화 상자이다. 필요한 최소 기능을 가지며 나머지를 똑똑하게 처리한다.</p>
 
-          <h3>Static example</h3>
-          <p>A rendered modal with header, body, and set of actions in the footer.</p>
+          <h3>정적 예제</h3>
+          <p>아래 보이는 모달은 제목과 본문과 꼬리말에 행동들이 있다.</p>
           <div class="bs-docs-example" style="background-color: #f5f5f5;">
             <div class="modal" style="position: relative; top: auto; left: auto; right: auto; margin: 0 auto 20px; z-index: 1; max-width: 100%;">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h3>Modal header</h3>
+                <h3>모달 제목</h3>
               </div>
               <div class="modal-body">
-                <p>One fine body&hellip;</p>
+                <p>한 멋진 본문&hellip;</p>
               </div>
               <div class="modal-footer">
-                <a href="#" class="btn">Close</a>
-                <a href="#" class="btn btn-primary">Save changes</a>
+                <a href="#" class="btn">닫기</a>
+                <a href="#" class="btn btn-primary">변경사항 저장</a>
               </div>
             </div>
           </div>
@@ -217,71 +218,70 @@ $('#myModal').on('show', function (e) {
 &lt;div class="modal hide fade"&gt;
   &lt;div class="modal-header"&gt;
     &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;&amp;times;&lt;/button&gt;
-    &lt;h3&gt;Modal header&lt;/h3&gt;
+    &lt;h3&gt;모달 제목&lt;/h3&gt;
   &lt;/div&gt;
   &lt;div class="modal-body"&gt;
-    &lt;p&gt;One fine body&hellip;&lt;/p&gt;
+    &lt;p&gt;한 멋진 본문&hellip;&lt;/p&gt;
   &lt;/div&gt;
   &lt;div class="modal-footer"&gt;
-    &lt;a href="#" class="btn"&gt;Close&lt;/a&gt;
-    &lt;a href="#" class="btn btn-primary"&gt;Save changes&lt;/a&gt;
+    &lt;a href="#" class="btn"&gt;닫기&lt;/a&gt;
+    &lt;a href="#" class="btn btn-primary"&gt;변경사항 저장&lt;/a&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
 
-          <h3>Live demo</h3>
-          <p>Toggle a modal via JavaScript by clicking the button below. It will slide down and fade in from the top of the page.</p>
+          <h3>라이브 시연</h3>
+          <p>아래 버튼을 클릭하면 자바스크립트로 모달을 켜고 끈다. 모달은 페이지 상단에서 슬라이드하고 페이드인한다.</p>
           <!-- sample modal content -->
           <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              <h3 id="myModalLabel">Modal Heading</h3>
+              <h3 id="myModalLabel">모달 제목</h3>
             </div>
             <div class="modal-body">
-              <h4>Text in a modal</h4>
-              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem.</p>
+              <h4>모달 속 본문</h4>
+              <p>어느 틈에 기만이가 언덕을 내려와서 영신이가 앉은 맞은편 논둑에 가 버티고 섰다.</p>
 
-              <h4>Popover in a modal</h4>
-              <p>This <a href="#" role="button" class="btn popover-test" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">button</a> should trigger a popover on click.</p>
+              <h4>모달 속 팝오버</h4>
+              <p>이 <a href="#" role="button" class="btn popover-test" title="제목" data-content="그리고 여기 놀라운 내용이 있다. 정말 마음에 들죠?">버튼</a>을 클릭하면 팝오버가 나타난다.</p>
 
-              <h4>Tooltips in a modal</h4>
-              <p><a href="#" class="tooltip-test" title="Tooltip">This link</a> and <a href="#" class="tooltip-test" title="Tooltip">that link</a> should have tooltips on hover.</p>
+              <h4>모달 속 툴팁</h4>
+              <p><a href="#" class="tooltip-test" title="툴팁">이 링크</a>와 <a href="#" class="tooltip-test" title="툴팁">저 링크</a>는 마우스를 올리면 툴팁이 나타난다.</p>
 
               <hr>
 
-              <h4>Overflowing text to show optional scrollbar</h4>
-              <p>We set a fixed <code>max-height</code> on the <code>.modal-body</code>. Watch it overflow with all this extra lorem ipsum text we've included.</p>
-              <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-              <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-              <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-              <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-            </div>
+              <h4>한 줄이 넘어가서 선택적인 스크롤 막대를 보이는 본문</h4>
+              <p>우리는 <code>.modal-body</code>의 <code>max-height</code>를 고정했다. 한 줄이 넘어가는 본문을 줄바꿈한 결과를 보라.</p>
+              <p>두 사람은 나란히 서서 기만의 등뒤를 돌아 멀리 바다가 내려다보이는 언덕으로 올라갔다. 논과 밭이 눈앞에 질펀히 깔렸는데 여기저기서 두레로 물을 푸는 소리와 소 모는 소리가 들린다.</p>
+              <p>남들은 다 벗고 들어서서 일을 하는데 저 혼자 외톨로 돌아다니며 구경하듯 하기가 미안스럽기도 하고 한편으로는 무료하기도 해서 이말 저말 묻는 것이다.</p>
+              <p>영신이도 아름드리 느티나무와 고목이 된 대추나무가 얼크러진 큰마을 편을 바라본다. 옥색 저고리를 입은 호리호리한 사나이가 안경을 번쩍거리며 기다란 살포를 지팡이삼아 짚고 언덕길을 어슬렁거리고 내려온다.</p>
+              <p>두 사람은 나란히 서서 기만의 등뒤를 돌아 멀리 바다가 내려다보이는 언덕으로 올라갔다. 논과 밭이 눈앞에 질펀히 깔렸는데 여기저기서 두레로 물을 푸는 소리와 소 모는 소리가 들린다.</p>
+              <p>남들은 다 벗고 들어서서 일을 하는데 저 혼자 외톨로 돌아다니며 구경하듯 하기가 미안스럽기도 하고 한편으로는 무료하기도 해서 이말 저말 묻는 것이다.</p>
+              <p>영신이도 아름드리 느티나무와 고목이 된 대추나무가 얼크러진 큰마을 편을 바라본다. 옥색 저고리를 입은 호리호리한 사나이가 안경을 번쩍거리며 기다란 살포를 지팡이삼아 짚고 언덕길을 어슬렁거리고 내려온다.</p>            </div>
             <div class="modal-footer">
-              <button class="btn" data-dismiss="modal">Close</button>
-              <button class="btn btn-primary">Save changes</button>
+              <button class="btn" data-dismiss="modal">닫기</button>
+              <button class="btn btn-primary">변경사항 저장</button>
             </div>
           </div>
           <div class="bs-docs-example" style="padding-bottom: 24px;">
-            <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">Launch demo modal</a>
+            <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-large">모달 시연 시작</a>
           </div>
 <pre class="prettyprint linenums">
-&lt!-- Button to trigger modal --&gt;
-&lt;a href="#myModal" role="button" class="btn" data-toggle="modal"&gt;Launch demo modal&lt;/a&gt;
+&lt!-- 모달을 켜고 끄는 버튼 --&gt;
+&lt;a href="#myModal" role="button" class="btn" data-toggle="modal"&gt;모달 시연 시작&lt;/a&gt;
 
-&lt!-- Modal --&gt;
+&lt!-- 모달 --&gt;
 &lt;div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"&gt;
   &lt;div class="modal-header"&gt;
     &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;&times;&lt;/button&gt;
-    &lt;h3 id="myModalLabel"&gt;Modal header&lt;/h3&gt;
+    &lt;h3 id="myModalLabel"&gt;모달 제목&lt;/h3&gt;
   &lt;/div&gt;
   &lt;div class="modal-body"&gt;
-    &lt;p&gt;One fine body&hellip;&lt;/p&gt;
+    &lt;p&gt;한 멋진 본문&hellip;&lt;/p&gt;
   &lt;/div&gt;
   &lt;div class="modal-footer"&gt;
-    &lt;button class="btn" data-dismiss="modal" aria-hidden="true"&gt;Close&lt;/button&gt;
-    &lt;button class="btn btn-primary"&gt;Save changes&lt;/button&gt;
+    &lt;button class="btn" data-dismiss="modal" aria-hidden="true"&gt;닫기&lt;/button&gt;
+    &lt;button class="btn btn-primary"&gt;변경사항 저장&lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
@@ -290,25 +290,25 @@ $('#myModal').on('show', function (e) {
           <hr class="bs-docs-separator">
 
 
-          <h2>Usage</h2>
+          <h2>사용 설명</h2>
 
-          <h3>Via data attributes</h3>
-          <p>Activate a modal without writing JavaScript. Set <code>data-toggle="modal"</code> on a controller element, like a button, along with a <code>data-target="#foo"</code> or <code>href="#foo"</code> to target a specific modal to toggle.</p>
-          <pre class="prettyprint linenums">&lt;button type="button" data-toggle="modal" data-target="#myModal"&gt;Launch modal&lt;/button&gt;</pre>
+          <h3>data 속성으로</h3>
+          <p>자바스크립트를 작성하지 않고 모달을 만든다. 버튼 같은 제어 태그에 <code>data-toggle="modal"</code>을 붙이고, 켜고 끌 대상 모달을 <code>data-target="#foo"</code> 혹은 <code>href="#foo"</code>로 지시한다.</p>
+          <pre class="prettyprint linenums">&lt;button type="button" data-toggle="modal" data-target="#myModal"&gt;모달 시작&lt;/button&gt;</pre>
 
-          <h3>Via JavaScript</h3>
-          <p>Call a modal with id <code>myModal</code> with a single line of JavaScript:</p>
+          <h3>자바스크립트로</h3>
+          <p>아래 자바스크립트 한 줄은 id가 <code>myModal</code>인 모달을 부른다.</p>
           <pre class="prettyprint linenums">$('#myModal').modal(options)</pre>
 
-          <h3>Options</h3>
-          <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-backdrop=""</code>.</p>
+          <h3>옵션</h3>
+          <p>data 속성과 자바스크립트 모두 옵션을 지정할 수 있다. data 속성 사용시 <code>data-backdrop=""</code> 처럼 <code>data-</code> 뒤에 옵션 이름을 붙인다.</p>
           <table class="table table-bordered table-striped">
             <thead>
              <tr>
-               <th style="width: 100px;">Name</th>
-               <th style="width: 50px;">type</th>
-               <th style="width: 50px;">default</th>
-               <th>description</th>
+               <th style="width: 100px;">이름</th>
+               <th style="width: 50px;">자료형</th>
+               <th style="width: 50px;">기본값</th>
+               <th>설명</th>
              </tr>
             </thead>
             <tbody>
@@ -316,132 +316,132 @@ $('#myModal').on('show', function (e) {
                <td>backdrop</td>
                <td>boolean</td>
                <td>true</td>
-               <td>Includes a modal-backdrop element. Alternatively, specify <code>static</code> for a backdrop which doesn't close the modal on click.</td>
+               <td>모달 주위 배경을 어둡게 만드는 modal-backdrop 태그를 포함한다. 혹시 배경을 클릭할 때 모달을 닫지 않고 싶다면 <code>static</code> 값을 사용한다.</td>
              </tr>
              <tr>
                <td>keyboard</td>
                <td>boolean</td>
                <td>true</td>
-               <td>Closes the modal when escape key is pressed</td>
+               <td>이스케이프(escape) 키를 누르면 모달을 닫는다</td>
              </tr>
              <tr>
                <td>show</td>
                <td>boolean</td>
                <td>true</td>
-               <td>Shows the modal when initialized.</td>
+               <td>초기화시 모달을 보인다.</td>
              </tr>
              <tr>
                <td>remote</td>
-               <td>path</td>
+               <td>경로</td>
                <td>false</td>
-               <td><p>If a remote url is provided, content will be loaded via jQuery's <code>load</code> method and injected into the <code>.modal-body</code>. If you're using the data api, you may alternatively use the <code>href</code> tag to specify the remote source. An example of this is shown below:</p>
-              <pre class="prettyprint linenums"><code>&lt;a data-toggle="modal" href="remote.html" data-target="#modal"&gt;click me&lt;/a&gt;</code></pre></td>
+               <td><p>외부 url을 지정하면 jQuery <code>load</code> 메소드를 사용하여 읽어들인 본문을 <code>.modal-body</code>에 넣는다. data api를 사용한다면, <code>href</code> 태그로도 외부 출처를 지정할 수 있다. 아래가 그런 예제이다.</p>
+              <pre class="prettyprint linenums"><code>&lt;a data-toggle="modal" href="remote.html" data-target="#modal"&gt;여기를 클릭&lt;/a&gt;</code></pre></td>
              </tr>
             </tbody>
           </table>
 
-          <h3>Methods</h3>
+          <h3>메소드</h3>
           <h4>.modal(options)</h4>
-          <p>Activates your content as a modal. Accepts an optional options <code>object</code>.</p>
+          <p>내용을 모달로 만든다. 선택적으로 options <code>객체</code>를 받는다.</p>
 <pre class="prettyprint linenums">
 $('#myModal').modal({
   keyboard: false
 })
 </pre>
           <h4>.modal('toggle')</h4>
-          <p>Manually toggles a modal.</p>
+          <p>직접 모달을 켜고 끈다.</p>
           <pre class="prettyprint linenums">$('#myModal').modal('toggle')</pre>
           <h4>.modal('show')</h4>
-          <p>Manually opens a modal.</p>
+          <p>직접 모달을 연다.</p>
           <pre class="prettyprint linenums">$('#myModal').modal('show')</pre>
           <h4>.modal('hide')</h4>
-          <p>Manually hides a modal.</p>
+          <p>직접 모달을 숨긴다.</p>
           <pre class="prettyprint linenums">$('#myModal').modal('hide')</pre>
-          <h3>Events</h3>
-          <p>Bootstrap's modal class exposes a few events for hooking into modal functionality.</p>
+          <h3>이벤트</h3>
+          <p>부트스트랩 모달 클래스는 모달 기능과 연결된 몇가지 이벤트를 가진다.</p>
           <table class="table table-bordered table-striped">
             <thead>
              <tr>
-               <th style="width: 150px;">Event</th>
-               <th>Description</th>
+               <th style="width: 150px;">이벤트</th>
+               <th>설명</th>
              </tr>
             </thead>
             <tbody>
              <tr>
                <td>show</td>
-               <td>This event fires immediately when the <code>show</code> instance method is called.</td>
+               <td>이 이벤트는 <code>show</code> 인스턴스 메소드가 불리자마자 발동한다.</td>
              </tr>
              <tr>
                <td>shown</td>
-               <td>This event is fired when the modal has been made visible to the user (will wait for css transitions to complete).</td>
+               <td>이 이벤트는 (css 전환이 끝난 후) 모달이 사용자에게 완전히 보일 때 발동한다.</td>
              </tr>
              <tr>
                <td>hide</td>
-               <td>This event is fired immediately when the <code>hide</code> instance method has been called.</td>
+               <td>이 이벤트는 <code>hide</code> 인스턴스 메소드가 불리자마자 발동한다.</td>
              </tr>
              <tr>
                <td>hidden</td>
-               <td>This event is fired when the modal has finished being hidden from the user (will wait for css transitions to complete).</td>
+               <td>이 이벤트는 (css 전환이 끝난 후) 모달이 사용자에게 완전히 사라질 때 발동한다.</td>
              </tr>
             </tbody>
           </table>
 <pre class="prettyprint linenums">
 $('#myModal').on('hidden', function () {
-  // do something…
+  // 무언가를 한다…
 })
 </pre>
         </section>
 
 
 
-        <!-- Dropdowns
+        <!-- 드롭다운
         ================================================== -->
         <section id="dropdowns">
           <div class="page-header">
-            <h1>Dropdowns <small>bootstrap-dropdown.js</small></h1>
+            <h1>드롭다운 <small>bootstrap-dropdown.js</small></h1>
           </div>
 
 
-          <h2>Examples</h2>
-          <p>Add dropdown menus to nearly anything with this simple plugin, including the navbar, tabs, and pills.</p>
+          <h2>사용예</h2>
+          <p>이 간단한 플러그인을 사용하여 탐색막대, 탭, 알약 등 거의 모든 곳에 드롭다운 메뉴를 붙인다.</p>
 
-          <h3>Within a navbar</h3>
+          <h3>탐색막대에서</h3>
           <div class="bs-docs-example">
             <div id="navbar-example" class="navbar navbar-static">
               <div class="navbar-inner">
                 <div class="container" style="width: auto;">
-                  <a class="brand" href="#">Project Name</a>
+                  <a class="brand" href="#">프로젝트명</a>
                   <ul class="nav" role="navigation">
                     <li class="dropdown">
-                      <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                      <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">드롭다운 <b class="caret"></b></a>
                       <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
-                        <li><a tabindex="-1" href="http://google.com">Action</a></li>
-                        <li><a tabindex="-1" href="#anotherAction">Another action</a></li>
-                        <li><a tabindex="-1" href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a tabindex="-1" href="#">Separated link</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="http://google.com">행동</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#anotherAction">다른 행동</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">여기에는 또 다른</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">따로 떨어진 링크</a></li>
                       </ul>
                     </li>
                     <li class="dropdown">
-                      <a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown 2 <b class="caret"></b></a>
+                      <a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">드롭다운 2 <b class="caret"></b></a>
                       <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
-                        <li><a tabindex="-1" href="#">Action</a></li>
-                        <li><a tabindex="-1" href="#">Another action</a></li>
-                        <li><a tabindex="-1" href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a tabindex="-1" href="#">Separated link</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">행동</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">다른 행동</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">여기에는 또 다른</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">따로 떨어진 링크</a></li>
                       </ul>
                     </li>
                   </ul>
                   <ul class="nav pull-right">
                     <li id="fat-menu" class="dropdown">
-                      <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown">Dropdown 3 <b class="caret"></b></a>
+                      <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown">드롭다운 3 <b class="caret"></b></a>
                       <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
-                        <li><a tabindex="-1" href="#">Action</a></li>
-                        <li><a tabindex="-1" href="#">Another action</a></li>
-                        <li><a tabindex="-1" href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a tabindex="-1" href="#">Separated link</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">행동</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">다른 행동</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">여기에는 또 다른</a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">따로 떨어진 링크</a></li>
                       </ul>
                     </li>
                   </ul>
@@ -450,38 +450,38 @@ $('#myModal').on('hidden', function () {
             </div> <!-- /navbar-example -->
           </div> 
 
-          <h3>Within tabs</h3>
+          <h3>탭에서</h3>
           <div class="bs-docs-example">
             <ul class="nav nav-pills">
-              <li class="active"><a href="#">Regular link</a></li>
+              <li class="active"><a href="#">일반 링크</a></li>
               <li class="dropdown">
-                <a class="dropdown-toggle" id="drop4" role="button" data-toggle="dropdown" href="#">Dropdown <b class="caret"></b></a>
+                <a class="dropdown-toggle" id="drop4" role="button" data-toggle="dropdown" href="#">드롭다운 <b class="caret"></b></a>
                 <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
-                  <li><a tabindex="-1" href="#">Action</a></li>
-                  <li><a tabindex="-1" href="#">Another action</a></li>
-                  <li><a tabindex="-1" href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li><a tabindex="-1" href="#">Separated link</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">행동</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">다른 행동</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">여기에는 또 다른</a></li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">따로 떨어진 링크</a></li>
                 </ul>
               </li>
               <li class="dropdown">
-                <a class="dropdown-toggle" id="drop5" role="button" data-toggle="dropdown" href="#">Dropdown 2 <b class="caret"></b></a>
+                <a class="dropdown-toggle" id="drop5" role="button" data-toggle="dropdown" href="#">드롭다운 2 <b class="caret"></b></a>
                 <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="drop5">
-                  <li><a tabindex="-1" href="#">Action</a></li>
-                  <li><a tabindex="-1" href="#">Another action</a></li>
-                  <li><a tabindex="-1" href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li><a tabindex="-1" href="#">Separated link</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">행동</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">다른 행동</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">여기에는 또 다른</a></li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">따로 떨어진 링크</a></li>
                 </ul>
               </li>
               <li class="dropdown">
-                <a class="dropdown-toggle" id="drop5" role="button" data-toggle="dropdown" href="#">Dropdown 3 <b class="caret"></b></a>
+                <a class="dropdown-toggle" id="drop5" role="button" data-toggle="dropdown" href="#">드롭다운 3 <b class="caret"></b></a>
                 <ul id="menu3" class="dropdown-menu" role="menu" aria-labelledby="drop5">
-                  <li><a tabindex="-1" href="#">Action</a></li>
-                  <li><a tabindex="-1" href="#">Another action</a></li>
-                  <li><a tabindex="-1" href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li><a tabindex="-1" href="#">Separated link</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">행동</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">다른 행동</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">여기에는 또 다른</a></li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">따로 떨어진 링크</a></li>
                 </ul>
               </li>
             </ul> <!-- /tabs -->
@@ -491,23 +491,23 @@ $('#myModal').on('hidden', function () {
           <hr class="bs-docs-separator">
 
 
-          <h2>Usage</h2>
+          <h2>사용 설명</h2>
 
-          <h3>Via data attributes</h3>
-          <p>Add <code>data-toggle="dropdown"</code> to a link or button to toggle a dropdown.</p>
+          <h3>data 속성으로</h3>
+          <p>드롭다운을 켜고 끌 링크나 버튼에 <code>data-toggle="dropdown"</code>을 더한다.</p>
 <pre class="prettyprint linenums">
 &lt;div class="dropdown"&gt;
-  &lt;a class="dropdown-toggle" data-toggle="dropdown" href="#"&gt;Dropdown trigger&lt;/a&gt;
+  &lt;a class="dropdown-toggle" data-toggle="dropdown" href="#"&gt;드롭다운 작동&lt;/a&gt;
   &lt;ul class="dropdown-menu" role="menu" aria-labelledby="dLabel"&gt;
     ...
   &lt;/ul&gt;
 &lt;/div&gt;
 </pre>
-          <p>To keep URLs intact, use the <code>data-target</code> attribute instead of <code>href="#"</code>.</p>
+          <p>URL을 그대로 두려면 <code>href="#"</code> 대신 <code>data-target</code> 속성을 사용한다.</p>
 <pre class="prettyprint linenums">
 &lt;div class="dropdown"&gt;
   &lt;a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html"&gt;
-    Dropdown
+    드롭다운
     &lt;b class="caret"&gt;&lt;/b&gt;
   &lt;/a&gt;
   &lt;ul class="dropdown-menu" role="menu" aria-labelledby="dLabel"&gt;
@@ -516,45 +516,45 @@ $('#myModal').on('hidden', function () {
 &lt;/div&gt;
 </pre>
 
-          <h3>Via JavaScript</h3>
-          <p>Call the dropdowns via JavaScript:</p>
+          <h3>자바스크립트로</h3>
+          <p>자바스크립트로 드롭다운을 부른다.</p>
           <pre class="prettyprint linenums">$('.dropdown-toggle').dropdown()</pre>
 
-          <h3>Options</h3>
-          <p><em>None</em></p>
+          <h3>옵션</h3>
+          <p><em>없음</em></p>
 
-          <h3>Methods</h3>
+          <h3>메소드</h3>
           <h4>$().dropdown('toggle')</h4>
-          <p>A programmatic api for toggling menus for a given navbar or tabbed navigation.</p>
+          <p>해당 탐색막대나 탭의 메뉴를 켜고 끄는 api.</p>
         </section>
 
 
 
-        <!-- ScrollSpy
+        <!-- 스크롤 추적
         ================================================== -->
         <section id="scrollspy">
           <div class="page-header">
-            <h1>ScrollSpy <small>bootstrap-scrollspy.js</small></h1>
+            <h1>스크롤 추적 (scrollspy) <small>bootstrap-scrollspy.js</small></h1>
           </div>
 
 
-          <h2>Example in navbar</h2>
-          <p>The ScrollSpy plugin is for automatically updating nav targets based on scroll position. Scroll the area below the navbar and watch the active class change. The dropdown sub items will be highlighted as well.</p>
+          <h2>탐색막대 속 사용예</h2>
+          <p>스크롤 추적 플러그인은 스크롤 위치에 따라 자동으로 탐색의 선택 대상을 변경한다. 탐색막대 아래 영역을 스크롤하며 현재 클래스 변화를 보라. 드롭다운 하위 항목도 마찬가지로 강조한다.</p>
           <div class="bs-docs-example">
             <div id="navbarExample" class="navbar navbar-static">
               <div class="navbar-inner">
                 <div class="container" style="width: auto;">
-                  <a class="brand" href="#">Project Name</a>
+                  <a class="brand" href="#">프로젝트명</a>
                   <ul class="nav">
                     <li><a href="#fat">@fat</a></li>
                     <li><a href="#mdo">@mdo</a></li>
                     <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">드롭다운 <b class="caret"></b></a>
                       <ul class="dropdown-menu">
-                        <li><a href="#one">one</a></li>
-                        <li><a href="#two">two</a></li>
+                        <li><a href="#one">하나</a></li>
+                        <li><a href="#two">둘</a></li>
                         <li class="divider"></li>
-                        <li><a href="#three">three</a></li>
+                        <li><a href="#three">셋</a></li>
                       </ul>
                     </li>
                   </ul>
@@ -563,16 +563,16 @@ $('#myModal').on('hidden', function () {
             </div>
             <div data-spy="scroll" data-target="#navbarExample" data-offset="0" class="scrollspy-example">
               <h4 id="fat">@fat</h4>
-              <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+              <p>삼층 이십이호실에 들어 있던 젊은 회사원이 오늘 방을 내어놓았다. 얼마 전에 결혼을 하였는데 그 동안 마땅한 집이 없어서 아내는 친정에, 그리고 남편인 자기는 그전에 들어 있던 이 아파트에 그대로 갈라져서 신혼생활답지 않게 지내 오다가 이번에 돈암정 어디다 집을 사고 신접살림을 차려 놓기로 되었다 한다. 오후 여섯시가 가까운 시각, 아마도 회사의 퇴근시간을 이용하여 양주가 어디서 만난 것인지 해가 그믈그믈해서야 회사원은 색시 티가 나는 아내와 함께 짐을 가지러 트럭과 인부를 데리고 왔다.</p>
               <h4 id="mdo">@mdo</h4>
-              <p>Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.</p>
-              <h4 id="one">one</h4>
-              <p>Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.</p>
-              <h4 id="two">two</h4>
-              <p>In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.</p>
-              <h4 id="three">three</h4>
-              <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
-              <p>Keytar twee blog, culpa messenger bag marfa whatever delectus food truck. Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats you probably haven't heard of them consequat hoodie gluten-free lo-fi fap aliquip. Labore elit placeat before they sold out, terry richardson proident brunch nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan. Cardigan craft beer seitan readymade velit. VHS chambray laboris tempor veniam. Anim mollit minim commodo ullamco thundercats.
+              <p>인부가 한 사람 있다고는 하지만 삼층에서 밑바닥까지 세간을 나르고 그것을 다시 트럭에 싣고 하기에는 이럭저럭 한 시간이 걸렸다. 최무경(崔武卿)이는 아파트의 사무원일 뿐 아니라 회사원이 있던 방이 바로 제가 들어 있는 옆방이어서 여자의 몸으로 별로 손을 걷고 거들어 줄 것은 없다고 하여도 짐이 다 실리는 동안 아래층 사무실에 남아 있어서 그들의 이사하는 모양을 바라보고 있었다.</p>
+              <h4 id="one">하나</h4>
+              <p>사무실에서 일을 보는 늙은 강영감이 제법 위아래로 오르내리며 짐을 챙겨도 주고 양복장이며 책장이며 탁자며 하는 육중한 것은 한 귀를 맞들어서 인부와 회사원과 함께 운반에 힘을 돕기도 하였다. 짐을 대충 실어 놓고 회사원은 아내와 같이 사무실로 들어왔다. "부금(敷金) 일백오 원 중에서 이번 달 치가 오늘까지 이십팔 원, 그것을 제하고 칠십칠 원이올시다." 미리 준비해 두었던 지폐를 손금고에서 꺼내서 최무경이는 그것을 회사원에게로 건네었다.</p>
+              <h4 id="two">둘</h4>
+              <p>회사원은 한 손으로 받아서 약간 치켜들듯 하여 사의를 표하고 그것을 그대로 주머니에 넣으려고 한다. "세어 보세요." 그러한 말에 회사원은, 무어 세어 보나마나 하는 표정을 지어 보았으나 다시 어떻게 생각하였는지 넣으려던 지폐를 꺼내서 불빛에다 대고 손가락에 침도 묻히지 않으면서 한장 두장 세어 보고 있다. "꼭 맞습니다." 하고 낯을 들었을 때 무경이는 펜과 영수증을 놓으면서, "영수증이올시다. 사인하시고 도장 쳐주십시오. 수입인지는 아파트 쪽에서 한턱내었습니다." 하고는 회사원의 아내를 바라보며 웃었다. 젊은 아내는 무경이의 웃음에 따라서 흰 이를 내놓고 웃었다.</p>
+              <h4 id="three">셋</h4>
+              <p>"고맙습니다." 영수증을 받아서 서류와 함께 금고에 챙긴 뒤에 무경이는 두 신혼부부의 낯을 새삼스레 쳐다보았다. 행복에 넘친 듯한 얼굴들이다. 진부한 형용이지만 역시 행복에 넘쳐 있는 표정이라는 말이 제일 적절할 것처럼 무경이는 생각하는 것이다. "저어 돈암정 바로 삼선평이올시다. 거기서 바른쪽으로 향해서 들어가면 새로 분할한 주택지가 있습니다. 큰 골목으로 접어들어서 다시 셋째 번 골목 둘째 집이 저희들 집이올시다. 사백오십번지의 십칠호. 한번 교외에 산보 나오시는 일이 계시건 찾아 주시기 바랍니다."</p>
+              <p>아무리 총명한 사람일지라도 이러한 지도의 설명을 잊지 않을 사람이 없을 것이건만 사람들은 노상에서 만난 친구들께 곧잘 이러한 방식으로 저의 집의 주소를 가르쳐 준다. 그러나 듣는 사람도 또 지금 말하는 설명을 모두 머릿속에 챙겨 넣기나 한 듯이, "네 네, 한번 나가면 꼭 들르겠습니다." 하고 대답하는 것이었다. 신접살림이라 무어든 간 새로 준비했을 것이니 홀아비살림 때에 쓰던 것으로 소용이 없을 것은 공연히 짐이나 된다고 이렇게 내버려두고 가는 것이리라, 강영감은 그것을 모아다가 넝마장수에게 팔기도 하고 저의 집에 가져다 쓰기도 하는 것이었다.
               </p>
             </div>
           </div>
@@ -581,39 +581,39 @@ $('#myModal').on('hidden', function () {
           <hr class="bs-docs-separator">
 
 
-          <h2>Usage</h2>
+          <h2>사용 방법</h2>
 
-          <h3>Via data attributes</h3>
-          <p>To easily add scrollspy behavior to your topbar navigation, just add <code>data-spy="scroll"</code> to the element you want to spy on (most typically this would be the body) and <code>data-target=".navbar"</code> to select which nav to use. You'll want to use scrollspy with a <code>.nav</code> component.</p>
+          <h3>data 속성으로</h3>
+          <p>화면 상단 탐색막대에 스크롤 추적 기능을 넣으려면, 추적할 대상 (대부분 body) 태그에 <code>data-spy="scroll"</code>를 더하고 <code>data-target=".navbar"</code>로 탐색막대를 선택한다. <code>.nav</code> 화면 구성요소에도 스크롤 추적을 사용할 수 있다.</p>
           <pre class="prettyprint linenums">&lt;body data-spy="scroll" data-target=".navbar"&gt;...&lt;/body&gt;</pre>
 
-          <h3>Via JavaScript</h3>
-          <p>Call the scrollspy via JavaScript:</p>
+          <h3>자바스크립트로</h3>
+          <p>자바스크립트로 스크롤 추적을 부른다.</p>
           <pre class="prettyprint linenums">$('#navbar').scrollspy()</pre>
 
           <div class="alert alert-info">
-            <strong>Heads up!</strong>
-            Navbar links must have resolvable id targets. For example, a <code>&lt;a href="#home"&gt;home&lt;/a&gt;</code> must correspond to something in the dom like <code>&lt;div id="home"&gt;&lt;/div&gt;</code>.
+            <strong>주의!</strong>
+            탐색막대 링크는 유효한 id 대상이 있어야 한다. 예를 들어, <code>&lt;a href="#home"&gt;대문&lt;/a&gt;</code>은 어딘가 <code>&lt;div id="home"&gt;&lt;/div&gt;</code> 식의 dom에 대응해야 한다.
           </div>
 
-          <h3>Methods</h3>
+          <h3>메소드</h3>
           <h4>.scrollspy('refresh')</h4>
-          <p>When using scrollspy in conjunction with adding or removing of elements from the DOM, you'll need to call the refresh method like so:</p>
+          <p>DOM에서 태그를 추가하거나 빼면서 스크롤 추적을 사용한다면, 이렇게 refresh 메소드를 호출해야 한다.</p>
 <pre class="prettyprint linenums">
 $('[data-spy="scroll"]').each(function () {
   var $spy = $(this).scrollspy('refresh')
 });
 </pre>
 
-          <h3>Options</h3>
-          <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-offset=""</code>.</p>
+          <h3>옵션</h3>
+          <p>data 속성과 자바스크립트 모두 옵션을 지정할 수 있다. data 속성 사용시 <code>data-offset=""</code> 처럼 <code>data-</code> 뒤에 옵션 이름을 붙인다.</p>
           <table class="table table-bordered table-striped">
             <thead>
              <tr>
-               <th style="width: 100px;">Name</th>
-               <th style="width: 100px;">type</th>
-               <th style="width: 50px;">default</th>
-               <th>description</th>
+               <th style="width: 100px;">이름</th>
+               <th style="width: 100px;">자료형</th>
+               <th style="width: 50px;">기본값</th>
+               <th>설명</th>
              </tr>
             </thead>
             <tbody>
@@ -621,23 +621,23 @@ $('[data-spy="scroll"]').each(function () {
                <td>offset</td>
                <td>number</td>
                <td>10</td>
-               <td>Pixels to offset from top when calculating position of scroll.</td>
+               <td>스크롤 위치를 계산할 때 상단에 추가할 픽셀.</td>
              </tr>
             </tbody>
           </table>
 
-          <h3>Events</h3>
+          <h3>이벤트</h3>
           <table class="table table-bordered table-striped">
             <thead>
              <tr>
-               <th style="width: 150px;">Event</th>
-               <th>Description</th>
+               <th style="width: 150px;">이벤트</th>
+               <th>설명</th>
              </tr>
             </thead>
             <tbody>
              <tr>
                <td>activate</td>
-               <td>This event fires whenever a new item becomes activated by the scrollspy.</td>
+               <td>이 이벤트는 스크롤 추적이 새 항목을 선택할 때 발동한다.</td>
             </tr>
             </tbody>
           </table>
@@ -645,22 +645,22 @@ $('[data-spy="scroll"]').each(function () {
 
 
 
-        <!-- Tabs
+        <!-- 탭
         ================================================== -->
         <section id="tabs">
           <div class="page-header">
-            <h1>Togglable tabs <small>bootstrap-tab.js</small></h1>
+            <h1>켜고 끄는 탭 <small>bootstrap-tab.js</small></h1>
           </div>
 
 
-          <h2>Example tabs</h2>
-          <p>Add quick, dynamic tab functionality to transition through panes of local content, even via dropdown menus.</p>
+          <h2>탭 예제</h2>
+          <p>내용이 있는 판들 사이를 전환하는 빠르고 동적인 탭 기능을 더한다. 심지어 드롭다운 메뉴도 탭으로 동작한다.</p>
           <div class="bs-docs-example">
             <ul id="myTab" class="nav nav-tabs">
-              <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
-              <li><a href="#profile" data-toggle="tab">Profile</a></li>
+              <li class="active"><a href="#home" data-toggle="tab">대문</a></li>
+              <li><a href="#profile" data-toggle="tab">프로필</a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">드롭다운 <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="#dropdown1" data-toggle="tab">@fat</a></li>
                   <li><a href="#dropdown2" data-toggle="tab">@mdo</a></li>
@@ -669,16 +669,16 @@ $('[data-spy="scroll"]').each(function () {
             </ul>
             <div id="myTabContent" class="tab-content">
               <div class="tab-pane fade in active" id="home">
-                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+                <p>미스터 방의 증조가 타관에서 떠들어온 명색 없는 사람이었다. 그 조부가 고을의 아전을 다녔다. 그 아비가 짚신장수였다. 칠십에, 고로롱고로롱, 아직도 살아 있지만, 시방도 짚신 곱게 삼기로 고을에서 첫째가는 방첨지가 바로 그였다. 그러나마 삼십을 바라보도록 남의 집 머슴살이로, 이집 저집 살고 다니는 코삐뚤이 삼복이었다. 물론 낫 놓고 기역자도 못 그리는 판무식이었다. 백주사는 생각하자니 속으로 이렇게 분개스럽지 않을 수가 없었다.</p>
               </div>
               <div class="tab-pane fade" id="profile">
-                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+                <p>백주사는 생각하자니 속으로 이렇게 분개스럽지 않을 수가 없었다. 그러나 일변으로는, 그러던 코삐뚤이 삼복이가 그야말로 선영이 명당엘 들었단 말인지, 무슨 조화를 지녔단 말인지, 불과 몇 달지간에 이렇게 훌륭히 되고, 부자가 되고, 미스터 방인지 구리다 방인지가 되고 하여 가지고는, 갖은 호강 다 하며 천하에 무설 것이 없고 기광이 나서 막 이러니, 한편 생각하면 신기하기도 하고 부럽기도 하고 또한 안타깝기도 하였다. '사람의 운수란 참 모를 일이야.' 백주사는 속으로 절절히 이렇게 탄복도 아니치 못하였다. 코삐뚤이 삼복의 이 눈부신 발신은, 그러나 백주사가 희한히 여기는 것처럼 무슨 명당 바람이 났다거나 조화를 지녔다거나 그런 신기한 곡절이 있는 바가 아니요, 지극히 간단하고도 수월한 것이었었다. '사람의 운수란 참 모를 일이야.'</p>
               </div>
               <div class="tab-pane fade" id="dropdown1">
-                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+                <p>이날도 신기료장수 방삼복은 종로의 공원 건너편 응달에 앉아서, 구두 징을 박으면서, 해방의 날을 맞이하였다. 그러나 삼복은 감격한 줄도 기쁜 줄도 모르겠었다. 지나가는 행인이, 서로 모르던 사람끼리면서 덤쑥 서로 껴안고 기뻐하고 눈물을 흘리고 하는 것이, 삼복은 속을 모르겠고 차라리 쑥스러 보일 따름이었다. 몰려 닫는 군중이 오히려 성가시고, 만세 소리가 귀가 아파 이맛살이 지푸려질 지경이었다. 몰려다니고 만세를 부르고 하기에 미쳐 날뛰느라고 정신이 없어, 손님이 없어, 손님이 부쩍 줄었다. "우랄질! 독립이 배부른가?" 이삼 일 지나면서부터야 삼복에게도 삼복에게다운 해방의 혜택이 나누어졌다.</p>
               </div>
               <div class="tab-pane fade" id="dropdown2">
-                <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+                <p>총총히 집으로 돌아가, 마누라를 시켜 구두 고치는 연장 일습과 재료 남은 것에다 이불이며 헌옷가지 해서 한 짐을 동네 아는 가게에다 맡기고는 한 달 기한으로 돈 백 원을 서푼 변으로 취해 오게 하였다. 그 돈 백 원을 가지고 삼복은 흔한 넝마전으로 가서 백 원 돈이 꼭 차는 한도까지에 양복이란 명색 한 벌과 모자를 샀다. 신발은 부득이 안방 사람의 병정구두 사 신은 것을 이 다음 창갈이 거저 해주겠다는 조건으로, 닷새만 제 것과 바꾸어 신기로 하였다. 한주먹 보기 좋게 갈겨 넘어뜨리고는, 찌부러진 오두막집을 나서 종로로 향을 잡았다.</p>
               </div>
             </div>
           </div>
@@ -687,42 +687,42 @@ $('[data-spy="scroll"]').each(function () {
           <hr class="bs-docs-separator">
 
 
-          <h2>Usage</h2>
-          <p>Enable tabbable tabs via JavaScript (each tab needs to be activated individually):</p>
+          <h2>사용 방법</h2>
+          <p>자바스크립트로 켜고 끄는 탭을 만든다. 탭마다 따로 만들어야 한다.</p>
 <pre class="prettyprint linenums">
 $('#myTab a').click(function (e) {
   e.preventDefault();
   $(this).tab('show');
 })</pre>
-          <p>You can activate individual tabs in several ways:</p>
+          <p>여러 방법으로 개별 탭을 지칭할 수 있다.</p>
 <pre class="prettyprint linenums">
-$('#myTab a[href="#profile"]').tab('show'); // Select tab by name
-$('#myTab a:first').tab('show'); // Select first tab
-$('#myTab a:last').tab('show'); // Select last tab
-$('#myTab li:eq(2) a').tab('show'); // Select third tab (0-indexed)
+$('#myTab a[href="#profile"]').tab('show'); // 이름으로 탭 선택
+$('#myTab a:first').tab('show'); // 첫번째 탭 선택
+$('#myTab a:last').tab('show'); // 마지막 탭 선택
+$('#myTab li:eq(2) a').tab('show'); // 세번째 탭 선택 (순서는 0부터)
 </pre>
 
-          <h3>Markup</h3>
-          <p>You can activate a tab or pill navigation without writing any JavaScript by simply specifying <code>data-toggle="tab"</code> or <code>data-toggle="pill"</code> on an element. Adding the <code>nav</code> and <code>nav-tabs</code> classes to the tab <code>ul</code> will apply the Bootstrap tab styling.</p>
+          <h3>마크업</h3>
+          <p>자바스크립트를 전혀 작성하지 않고 태그에 <code>data-toggle="tab"</code> 혹은 <code>data-toggle="pill"</code>을 명시하기만 하면 탭이나 알약 탐색이 생긴다. 탭 <code>ul</code>에 <code>nav</code>와 <code>nav-tabs</code> 클래스를 추가하면 부트스트랩 탭 스타일이 적용된다.</p>
 <pre class="prettyprint linenums">
 &lt;ul class="nav nav-tabs"&gt;
-  &lt;li&gt;&lt;a href="#home" data-toggle="tab"&gt;Home&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#profile" data-toggle="tab"&gt;Profile&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#messages" data-toggle="tab"&gt;Messages&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#settings" data-toggle="tab"&gt;Settings&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#home" data-toggle="tab"&gt;대문&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#profile" data-toggle="tab"&gt;프로필&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#messages" data-toggle="tab"&gt;메시지&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#settings" data-toggle="tab"&gt;설정&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</pre>
 
-          <h3>Methods</h3>
+          <h3>메소드</h3>
           <h4>$().tab</h4>
           <p>
-            Activates a tab element and content container. Tab should have either a <code>data-target</code> or an <code>href</code> targeting a container node in the DOM.
+            탭 태그와 탭내용을 보여준다. 탭은 DOM의 탭내용을 지칭하는 <code>data-target</code>이나 <code>href</code>가 필요하다.
           </p>
 <pre class="prettyprint linenums">
 &lt;ul class="nav nav-tabs" id="myTab"&gt;
-  &lt;li class="active"&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#profile"&gt;Profile&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#messages"&gt;Messages&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#settings"&gt;Settings&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="active"&gt;&lt;a href="#home"&gt;대문&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#profile"&gt;프로필&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#messages"&gt;메시지&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#settings"&gt;설정&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;div class="tab-content"&gt;
@@ -739,77 +739,81 @@ $('#myTab li:eq(2) a').tab('show'); // Select third tab (0-indexed)
 &lt;/script&gt;
 </pre>
 
-          <h3>Events</h3>
+          <h3>이벤트</h3>
           <table class="table table-bordered table-striped">
             <thead>
              <tr>
-               <th style="width: 150px;">Event</th>
-               <th>Description</th>
+               <th style="width: 150px;">이벤트</th>
+               <th>설명</th>
              </tr>
             </thead>
             <tbody>
              <tr>
                <td>show</td>
-               <td>This event fires on tab show, but before the new tab has been shown. Use <code>event.target</code> and <code>event.relatedTarget</code> to target the active tab and the previous active tab (if available) respectively.</td>
+               <td>이 이벤트는 탭 show를 호출했지만 새로운 탭이 보이기 전에 발동한다. <code>event.target</code>은 새로운 탭을 지칭하고, <code>event.relatedTarget</code>은 (있다면) 이전 탭을 지칭한다.</td>
             </tr>
             <tr>
                <td>shown</td>
-               <td>This event fires on tab show after a tab has been shown. Use <code>event.target</code> and <code>event.relatedTarget</code> to target the active tab and the previous active tab (if available) respectively.</td>
+               <td>이 이벤트는 탭이 완전히 보일 때 발동한다. <code>event.target</code>은 새로운 탭을 지칭하고, <code>event.relatedTarget</code>는 (있다면) 이전 탭을 지칭한다.</td>
              </tr>
             </tbody>
           </table>
 <pre class="prettyprint linenums">
 $('a[data-toggle="tab"]').on('shown', function (e) {
-  e.target // activated tab
-  e.relatedTarget // previous tab
+  e.target // 새로 선택된 탭
+  e.relatedTarget // 이젠 탭
 })
 </pre>
         </section>
 
 
-        <!-- Tooltips
+        <!-- 툴팁
         ================================================== -->
         <section id="tooltips">
           <div class="page-header">
-            <h1>Tooltips <small>bootstrap-tooltip.js</small></h1>
+            <h1>툴팁 <small>bootstrap-tooltip.js</small></h1>
           </div>
 
 
-          <h2>Examples</h2>
-          <p>Inspired by the excellent jQuery.tipsy plugin written by Jason Frame; Tooltips are an updated version, which don't rely on images, use CSS3 for animations, and data-attributes for local title storage.</p>
-          <p>Hover over the links below to see tooltips:</p>
+          <h2>사용예</h2>
+          <p>제이슨 프레임이 만든 훌륭한 jQuery tipsy 플러그인에서 영감을 받았다. 그림을 의존하지 않고 CSS3로 애니메이션을 하며 data 속성을 제목으로 사용하도록 툴팁을 변경했다.</p>
+          <p>성능상 이유 때문에 툴팁과 팝오버 data api는 동의가 필요하다. <strong>직접 이들 플러그인을 초기화해야 한다</strong>.</p>
+          <p>툴팁을 보려면 링크 위로 마우스를 올린다.</p>
           <div class="bs-docs-example tooltip-demo">
-            <p class="muted" style="margin-bottom: 0;">Tight pants next level keffiyeh <a href="#" rel="tooltip" title="Default tooltip">you probably</a> haven't heard of them. Photo booth beard raw denim letterpress vegan messenger bag stumptown. Farm-to-table seitan, mcsweeney's fixie sustainable quinoa 8-bit american apparel <a href="#" rel="tooltip" title="Another tooltip">have a</a> terry richardson vinyl chambray. Beard stumptown, cardigans banh mi lomo thundercats. Tofu biodiesel williamsburg marfa, four loko mcsweeney's cleanse vegan chambray. A really ironic artisan <a href="#" rel="tooltip" title="Another one here too">whatever keytar</a>, scenester farm-to-table banksy Austin <a href="#" rel="tooltip" title="The last tip!">twitter handle</a> freegan cred raw denim single-origin coffee viral.
+            <p class="muted" style="margin-bottom: 0;">어제 아침을 멀건 죽 한 <a href="#" data-toggle="tooltip" title="기본 툴팁">보시기로 때우고</a>, 점심은 늘 없어왔거니와 저녁과 오늘 아침을 끓이지 못하였으니, 하루낫 하룻밤이요 꼬바기 세 끼를 굶은 참이었다. 그러니, 시장하긴들 조옴 시장하련마는, 굶기에 단련이 되어 그런지 글에 정신이 쏠리어 그런지, <a href="#" data-toggle="tooltip" title="다른 툴팁">혹은 참으며</a> 내색을 아니하여 그러는지, 아뭏든 허생은 별로 시장하여 하는 빛이 없고, 글 읽는 소리도 한결같이 낭랑하다. 서울 남산 밑 묵적골이라고 하면, 가난하고 명색 없는 양반 나부랑이와 궁하고 <a href="#" data-toggle="tooltip" title="여기 이 매우 긴 툴팁은 우리가 적용한 max-width 결과를 보여준다.">불우한 선비와</a> 이런 사람들만 모여 살기로 예로부터 이름난 동네였다. 집이라는 것은 열이면 열 다 쓰러져가는 <a href="#" data-toggle="tooltip" title="마지막 툴팁!">오막살이 초가집이</a> 몇해씩을 이엉을 덮지 못하여 지붕은 움푹움푹 골이 패이고, 비가 오면 철철 들이 새고 하였다.
             </p>
           </div>
 
-          <h3>Four directions</h3>
+          <h3>네가지 방향</h3>
           <div class="bs-docs-example tooltip-demo">
             <ul class="bs-docs-tooltip-examples">
-              <li><a href="#" rel="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</a></li>
-              <li><a href="#" rel="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</a></li>
-              <li><a href="#" rel="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</a></li>
-              <li><a href="#" rel="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</a></li>
+              <li><a href="#" data-toggle="tooltip" data-placement="top" title="위쪽 툴팁">위쪽 툴팁</a></li>
+              <li><a href="#" data-toggle="tooltip" data-placement="right" title="오른쪽 툴팁">오른쪽 툴팁</a></li>
+              <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="아래쪽 툴팁">아래쪽 툴팁</a></li>
+              <li><a href="#" data-toggle="tooltip" data-placement="left" title="왼쪽 툴팁">왼쪽 툴팁</a></li>
             </ul>
           </div>
 
 
+          <h3>input 그룹 속 툴팁</h3>
+          <p>부트스트랩 input 그룹에서 툴팁과 팝오버를 사용한다면, 원하지 않는 부작용을 막기위해 (아래에서 설명) <code>container</code> 옵션을 사용해야 한다.</p>
+
           <hr class="bs-docs-separator">
 
 
-          <h2>Usage</h2>
-          <p>Trigger the tooltip via JavaScript:</p>
+          <h2>사용 방법</h2>
+          <p>자바스크립트로 툴팁을 켜고 끈다.</p>
           <pre class="prettyprint linenums">$('#example').tooltip(options)</pre>
 
-          <h3>Options</h3>
-          <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-animation=""</code>.</p>
+          <h3>옵션</h3>
+          <p>data 속성과 자바스크립트 모두 옵션을 지정할 수 있다. data 속성 사용시 <code>data-animation=""</code> 처럼 <code>data-</code> 뒤에 옵션 이름을 붙인다.</p>
           <table class="table table-bordered table-striped">
             <thead>
              <tr>
-               <th style="width: 100px;">Name</th>
-               <th style="width: 100px;">type</th>
-               <th style="width: 50px;">default</th>
-               <th>description</th>
+               <th style="width: 100px;">이름</th>
+               <th style="width: 100px;">자료형</th>
+               <th style="width: 50px;">기본값</th>
+               <th>설명</th>
              </tr>
             </thead>
             <tbody>
@@ -817,96 +821,103 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
                <td>animation</td>
                <td>boolean</td>
                <td>true</td>
-               <td>apply a css fade transition to the tooltip</td>
+               <td>툴팁에 css 페이드 전환을 적용한다</td>
              </tr>
              <tr>
                <td>html</td>
                <td>boolean</td>
                <td>false</td>
-               <td>Insert html into the tooltip. If false, jquery's <code>text</code> method will be used to insert content into the dom. Use text if you're worried about XSS attacks.</td>
+               <td>툴팁에 html을 넣는다. false이면, jquery의 <code>text</code> 메소드를 사용하여 dom에 내용을 넣는다. XSS 공격을 걱정한다면 html을 사용하지 마라.</td>
              </tr>
              <tr>
                <td>placement</td>
-               <td>string|function</td>
+               <td>string | function</td>
                <td>'top'</td>
-               <td>how to position the tooltip - top | bottom | left | right</td>
+               <td>툴팁의 위치 - top | bottom | left | right</td>
              </tr>
              <tr>
                <td>selector</td>
                <td>string</td>
                <td>false</td>
-               <td>If a selector is provided, tooltip objects will be delegated to the specified targets.</td>
+               <td>선택자를 지정하면, 해당 대상이 툴팁 객체를 담당한다</td>
              </tr>
              <tr>
                <td>title</td>
                <td>string | function</td>
                <td>''</td>
-               <td>default title value if `title` tag isn't present</td>
+               <td>`title` 태그가 없을 때 제목으로 사용할 기본값</td>
              </tr>
              <tr>
                <td>trigger</td>
                <td>string</td>
-               <td>'hover'</td>
-               <td>how tooltip is triggered - click | hover | focus | manual</td>
+               <td>'hover focus'</td>
+               <td>툴팁 동작 방식 - click | hover | focus | manual. 여러 종류를 공백으로 구분하여 사용할 수 있다.</td>
              </tr>
              <tr>
                <td>delay</td>
                <td>number | object</td>
                <td>0</td>
                <td>
-                <p>delay showing and hiding the tooltip (ms) - does not apply to manual trigger type</p>
-                <p>If a number is supplied, delay is applied to both hide/show</p>
-                <p>Object structure is: <code>delay: { show: 500, hide: 100 }</code></p>
+                <p>툴팁을 보이고 숨기는 지연 시간 (ms 단위) - manual 동작 방식은 해당 없음</p>
+                <p>숫자를 사용하면, 숨기고 보일 때 모두 같은 지연 시간을 적용한다</p>
+                <p>객체는 이렇게 사용한다. <code>delay: { show: 500, hide: 100 }</code></p>
+               </td>
+             </tr>
+             <tr>
+               <td>container</td>
+               <td>string | false</td>
+               <td>false</td>
+               <td>
+                <p>툴팁을 특정 태그에 붙인다 <code>container: 'body'</code></p>
                </td>
              </tr>
             </tbody>
           </table>
           <div class="alert alert-info">
-            <strong>Heads up!</strong>
-            Options for individual tooltips can alternatively be specified through the use of data attributes.
+            <strong>주의!</strong>
+            data 속성을 사용하여 툴팁마다 다른 옵션을 지정할 수 있다.
           </div>
 
-          <h3>Markup</h3>
-          <p>For performance reasons, the Tooltip and Popover data-apis are opt in. If you would like to use them just specify a selector option.</p>
-          <pre class="prettyprint linenums">&lt;a href="#" rel="tooltip" title="first tooltip"&gt;hover over me&lt;/a&gt;</pre>
+          <h3>마크업</h3>
+          <pre class="prettyprint linenums">&lt;a href="#" data-toggle="tooltip" title="첫번째 툴팁"&gt;여기에 마우스 올림&lt;/a&gt;</pre>
 
-          <h3>Methods</h3>
+          <h3>메소드</h3>
           <h4>$().tooltip(options)</h4>
-          <p>Attaches a tooltip handler to an element collection.</p>
+          <p>태그들에 툴팁 처리자를 붙인다.</p>
           <h4>.tooltip('show')</h4>
-          <p>Reveals an element's tooltip.</p>
+          <p>태그의 툴팁을 보인다.</p>
           <pre class="prettyprint linenums">$('#element').tooltip('show')</pre>
           <h4>.tooltip('hide')</h4>
-          <p>Hides an element's tooltip.</p>
+          <p>태그의 툴팁을 숨긴다.</p>
           <pre class="prettyprint linenums">$('#element').tooltip('hide')</pre>
           <h4>.tooltip('toggle')</h4>
-          <p>Toggles an element's tooltip.</p>
+          <p>태그의 툴팁을 켜고 끈다.</p>
           <pre class="prettyprint linenums">$('#element').tooltip('toggle')</pre>
           <h4>.tooltip('destroy')</h4>
-          <p>Hides and destroys an element's tooltip.</p>
+          <p>태그의 툴팁을 숨기고 파괴한다.</p>
           <pre class="prettyprint linenums">$('#element').tooltip('destroy')</pre>
         </section>
 
 
 
-      <!-- Popovers
+      <!-- 팝오버
       ================================================== -->
       <section id="popovers">
         <div class="page-header">
-          <h1>Popovers <small>bootstrap-popover.js</small></h1>
+          <h1>팝오버 <small>bootstrap-popover.js</small></h1>
         </div>
 
-        <h2>Examples</h2>
-        <p>Add small overlays of content, like those on the iPad, to any element for housing secondary information. Hover over the button to trigger the popover. <strong>Requires <a href="#tooltips">Tooltip</a> to be included.</strong></p>
+        <h2>사용예</h2>
+        <p> 아이패드와 비슷하게, 부가 정보를 담은 모든 태그에 작은 내용을 덧붙인다. 팝오버를 보이려면 버튼 위로 마우스를 가져간다. <strong>사용하려면 <a href="#tooltips">툴팁</a>이 필요하다.</strong></p>
 
-        <h3>Static popover</h3>
-        <p>Four options are available: top, right, bottom, and left aligned.</p>
+        <h3>정적 팝오버</h3>
+        <p>top, right, bottom, left, 네가지 정렬 옵션이 있다.</p>
         <div class="bs-docs-example bs-docs-example-popover">
           <div class="popover top">
             <div class="arrow"></div>
             <h3 class="popover-title">Popover top</h3>
             <div class="popover-content">
-              <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+              <p>자는 운장, 허둥 출신으로 장 비·유 비와 함께 의형제를 맺었다. 한때 조 조에게 포로가 되어 우대를 받고 한수정후로 봉함받았다.</p>
             </div>
           </div>
 
@@ -914,7 +925,7 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
             <div class="arrow"></div>
             <h3 class="popover-title">Popover right</h3>
             <div class="popover-content">
-              <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+              <p>자는 운장, 허둥 출신으로 장 비·유 비와 함께 의형제를 맺었다. 한때 조 조에게 포로가 되어 우대를 받고 한수정후로 봉함받았다.</p>
             </div>
           </div>
 
@@ -922,7 +933,7 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
             <div class="arrow"></div>
             <h3 class="popover-title">Popover bottom</h3>
             <div class="popover-content">
-              <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+              <p>자는 운장, 허둥 출신으로 장 비·유 비와 함께 의형제를 맺었다. 한때 조 조에게 포로가 되어 우대를 받고 한수정후로 봉함받았다.</p>
             </div>
           </div>
 
@@ -930,26 +941,26 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
             <div class="arrow"></div>
             <h3 class="popover-title">Popover left</h3>
             <div class="popover-content">
-              <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+              <p>자는 운장, 허둥 출신으로 장 비·유 비와 함께 의형제를 맺었다. 한때 조 조에게 포로가 되어 우대를 받고 한수정후로 봉함받았다.</p>
             </div>
           </div>
 
           <div class="clearfix"></div>
         </div>
-        <p>No markup shown as popovers are generated from JavaScript and content within a <code>data</code> attribute.</p>
+        <p>자바스크립트와 <code>data</code> 속성값으로 팝오버를 만들기 때문에 보여줄 마크업이 없다.</p>
 
-        <h3>Live demo</h3>
+        <h3>라이브 시연</h3>
         <div class="bs-docs-example" style="padding-bottom: 24px;">
-          <a href="#" class="btn btn-large btn-danger" rel="popover" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">Click to toggle popover</a>
+          <a href="#" class="btn btn-large btn-danger" data-toggle="popover" title="제목" data-content="그리고 여기 놀라운 내용이 있다. 정말 마음에 들죠?">팝오버를 켜고 끄려면 클릭</a>
         </div>
 
-        <h4>Four directions</h4>
+        <h4>네가지 방향</h4>
         <div class="bs-docs-example tooltip-demo">
           <ul class="bs-docs-tooltip-examples">
-            <li><a href="#" class="btn" rel="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on top">Popover on top</a></li>
-            <li><a href="#" class="btn" rel="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on right">Popover on right</a></li>
-            <li><a href="#" class="btn" rel="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on bottom">Popover on bottom</a></li>
-            <li><a href="#" class="btn" rel="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." title="Popover on left">Popover on left</a></li>
+            <li><a href="#" class="btn" data-toggle="popover" data-placement="top" data-content="1923년부터 칸딘스키의 영향을 받아 초현실주의 화풍으로 바뀌었다." title="위쪽 팝오버">위쪽 팝오버</a></li>
+            <li><a href="#" class="btn" data-toggle="popover" data-placement="right" data-content="1923년부터 칸딘스키의 영향을 받아 초현실주의 화풍으로 바뀌었다." title="오른쪽 팝오버">오른쪽 팝오버</a></li>
+            <li><a href="#" class="btn" data-toggle="popover" data-placement="bottom" data-content="1923년부터 칸딘스키의 영향을 받아 초현실주의 화풍으로 바뀌었다." title="아래쪽 팝오버">아래쪽 팝오버</a></li>
+            <li><a href="#" class="btn" data-toggle="popover" data-placement="left" data-content="1923년부터 칸딘스키의 영향을 받아 초현실주의 화풍으로 바뀌었다." title="왼쪽 팝오버">왼쪽 팝오버</a></li>
           </ul>
         </div>
 
@@ -957,19 +968,19 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
         <hr class="bs-docs-separator">
 
 
-        <h2>Usage</h2>
-        <p>Enable popovers via JavaScript:</p>
+        <h2>사용 방법</h2>
+        <p>자바스크립트로 팝오버를 만드는 방법이다.</p>
         <pre class="prettyprint linenums">$('#example').popover(options)</pre>
 
-        <h3>Options</h3>
-        <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-animation=""</code>.</p>
+        <h3>옵션</h3>
+        <p>data 속성과 자바스크립트 모두 옵션을 지정할 수 있다. data 속성 사용시 <code>data-animation=""</code> 처럼 <code>data-</code> 뒤에 옵션 이름을 붙인다.</p>
         <table class="table table-bordered table-striped">
           <thead>
            <tr>
-             <th style="width: 100px;">Name</th>
-             <th style="width: 100px;">type</th>
-             <th style="width: 50px;">default</th>
-             <th>description</th>
+             <th style="width: 100px;">이름</th>
+             <th style="width: 100px;">자료형</th>
+             <th style="width: 50px;">기본값</th>
+             <th>설명</th>
            </tr>
           </thead>
           <tbody>
@@ -977,107 +988,115 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
              <td>animation</td>
              <td>boolean</td>
              <td>true</td>
-             <td>apply a css fade transition to the tooltip</td>
+             <td>팝오버에 css 페이드 전환을 적용한다</td>
            </tr>
            <tr>
              <td>html</td>
              <td>boolean</td>
              <td>false</td>
-             <td>Insert html into the popover. If false, jquery's <code>text</code> method will be used to insert content into the dom. Use text if you're worried about XSS attacks.</td>
+             <td>팝오버에 html을 넣는다. false이면, jquery의 <code>text</code> 메소드를 사용하여 dom에 내용을 넣는다. XSS 공격을 걱정한다면 html을 사용하지 마라.</td>
            </tr>
            <tr>
              <td>placement</td>
-             <td>string|function</td>
+             <td>string | function</td>
              <td>'right'</td>
-             <td>how to position the popover - top | bottom | left | right</td>
+             <td>팝오버의 위치 - top | bottom | left | right</td>
            </tr>
            <tr>
              <td>selector</td>
              <td>string</td>
              <td>false</td>
-             <td>if a selector is provided, tooltip objects will be delegated to the specified targets</td>
+             <td>선택자를 지정하면, 해당 대상이 팝오버 객체를 담당한다</td>
            </tr>
            <tr>
              <td>trigger</td>
              <td>string</td>
              <td>'click'</td>
-             <td>how popover is triggered - click | hover | focus | manual</td>
+             <td>팝오버 동작 방식 - click | hover | focus | manual</td>
            </tr>
            <tr>
              <td>title</td>
              <td>string | function</td>
              <td>''</td>
-             <td>default title value if `title` attribute isn't present</td>
+             <td>`title` 속성이 없을 때 제목으로 사용할 기본값</td>
            </tr>
            <tr>
              <td>content</td>
              <td>string | function</td>
              <td>''</td>
-             <td>default content value if `data-content` attribute isn't present</td>
+             <td>`data-content` 속성이 없을 때 내용으로 사용할 기본값</td>
            </tr>
            <tr>
              <td>delay</td>
              <td>number | object</td>
              <td>0</td>
              <td>
-              <p>delay showing and hiding the popover (ms) - does not apply to manual trigger type</p>
-              <p>If a number is supplied, delay is applied to both hide/show</p>
-              <p>Object structure is: <code>delay: { show: 500, hide: 100 }</code></p>
+              <p>팝오버를 보이고 숨기는 지연 시간 (ms 단위) - manual 동작 방식은 해당 없음</p>
+              <p>숫자를 사용하면, 숨기고 보일 때 모두 같은 지연 시간을 적용한다</p>
+              <p>객체는 이렇게 사용한다. <code>delay: { show: 500, hide: 100 }</code></p>
+             </td>
+           </tr>
+           <tr>
+             <td>container</td>
+             <td>string | false</td>
+             <td>false</td>
+             <td>
+              <p>팝오버를 특정 태그에 붙인다 <code>container: 'body'</code></p>
              </td>
            </tr>
           </tbody>
         </table>
         <div class="alert alert-info">
-          <strong>Heads up!</strong>
-          Options for individual popovers can alternatively be specified through the use of data attributes.
+          <strong>주의!</strong>
+          data 속성을 사용하여 팝오버마다 다른 옵션을 지정할 수 있다.
         </div>
 
         <h3>Markup</h3>
-        <p>For performance reasons, the Tooltip and Popover data-apis are opt in. If you would like to use them just specify a selector option.</p>
+        <p>성능상 이유 때문에 툴팁과 팝오버 data api는 동의가 필요하다. 사용하고 싶다면 selector 옵션을 설정하라.</p>
 
-        <h3>Methods</h3>
+        <h3>메소드</h3>
         <h4>$().popover(options)</h4>
-        <p>Initializes popovers for an element collection.</p>
+        <p>태그들에 사용할 팝오버를 초기화한다.</p>
         <h4>.popover('show')</h4>
-        <p>Reveals an elements popover.</p>
+        <p>태그의 팝오버를 보인다.</p>
         <pre class="prettyprint linenums">$('#element').popover('show')</pre>
         <h4>.popover('hide')</h4>
-        <p>Hides an elements popover.</p>
+        <p>태그의 팝오버를 숨긴다.</p>
         <pre class="prettyprint linenums">$('#element').popover('hide')</pre>
         <h4>.popover('toggle')</h4>
-        <p>Toggles an elements popover.</p>
+        <p>태그의 팝오버를 켜고 끈다.</p>
         <pre class="prettyprint linenums">$('#element').popover('toggle')</pre>
         <h4>.popover('destroy')</h4>
-        <p>Hides and destroys an element's popover.</p>
+        <p>태그의 팝오버를 숨기고 파괴한다.</p>
         <pre class="prettyprint linenums">$('#element').popover('destroy')</pre>
       </section>
 
 
 
-      <!-- Alert
+      <!-- 경고
       ================================================== -->
       <section id="alerts">
         <div class="page-header">
-          <h1>Alert messages <small>bootstrap-alert.js</small></h1>
+          <h1>경고문 <small>bootstrap-alert.js</small></h1>
         </div>
 
 
-        <h2>Example alerts</h2>
-        <p>Add dismiss functionality to all alert messages with this plugin.</p>
+        <h2>경고 예제</h2>
+        <p>이 플러그인은 모든 경고문에 닫기 기능을 더한다.</p>
         <div class="bs-docs-example">
           <div class="alert fade in">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.
+            <strong>어이쿠!</strong> 안색이 썩 좋아보이지 않으니 검사를 받아보는게 좋겠다.
           </div>
         </div>
 
         <div class="bs-docs-example">
           <div class="alert alert-block alert-error fade in">
             <button type="button" class="close" data-dismiss="alert">&times;</button>
-            <h4 class="alert-heading">Oh snap! You got an error!</h4>
-            <p>Change this and that and try again. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.</p>
+            <h4 class="alert-heading">이럴수가! 오류가 났다!</h4>
+            <p>이것저것을 바꾸고 다시 시도하라. 85개 또는 88개의 건반을 손가락 끝으로 눌러 소리를 낸다. 표현력이 풍부하여 독주·협주·실내악의 구성악기 등으로 널리 쓰인다.</p>
             <p>
-              <a class="btn btn-danger" href="#">Take this action</a> <a class="btn" href="#">Or do this</a>
+              <a class="btn btn-danger" href="#">이 행동을 실행</a> <a class="btn" href="#">아니면 이것을 함</a>
             </p>
           </div>
         </div>
@@ -1086,108 +1105,108 @@ $('a[data-toggle="tab"]').on('shown', function (e) {
         <hr class="bs-docs-separator">
 
 
-        <h2>Usage</h2>
-        <p>Enable dismissal of an alert via JavaScript:</p>
+        <h2>사용 방법</h2>
+        <p>자바스크립트로 경고 닫기를 만든다.</p>
         <pre class="prettyprint linenums">$(".alert").alert()</pre>
 
-        <h3>Markup</h3>
-        <p>Just add <code>data-dismiss="alert"</code> to your close button to automatically give an alert close functionality.</p>
+        <h3>마크업</h3>
+        <p>닫기 버튼에 <code>data-dismiss="alert"</code>를 추가하기만 하면 경고에 닫기 기능이 자동으로 생긴다.</p>
         <pre class="prettyprint linenums">&lt;a class="close" data-dismiss="alert" href="#"&gt;&amp;times;&lt;/a&gt;</pre>
 
-        <h3>Methods</h3>
+        <h3>메소드</h3>
         <h4>$().alert()</h4>
-        <p>Wraps all alerts with close functionality. To have your alerts animate out when closed, make sure they have the <code>.fade</code> and <code>.in</code> class already applied to them.</p>
+        <p>모든 경고에 닫기 기능을 단다. 경고를 닫을 때 애니메이션 효과를 주려면 미리 <code>.fade</code>와 <code>.in</code> 클래스를 적용한다.</p>
         <h4>.alert('close')</h4>
-        <p>Closes an alert.</p>
+        <p>경고를 닫는다.</p>
         <pre class="prettyprint linenums">$(".alert").alert('close')</pre>
 
 
-        <h3>Events</h3>
-        <p>Bootstrap's alert class exposes a few events for hooking into alert functionality.</p>
+        <h3>이벤트</h3>
+        <p>부트스트랩 경고 클래스는 경고 기능과 연결된 몇가지 이벤트를 가진다.</p>
         <table class="table table-bordered table-striped">
           <thead>
            <tr>
-             <th style="width: 150px;">Event</th>
-             <th>Description</th>
+             <th style="width: 150px;">이벤트</th>
+             <th>설명</th>
            </tr>
           </thead>
           <tbody>
            <tr>
              <td>close</td>
-             <td>This event fires immediately when the <code>close</code> instance method is called.</td>
+             <td>이 이벤트는 <code>close</code> 인스턴스 메소드가 불리자마자 발동한다.</td>
            </tr>
            <tr>
              <td>closed</td>
-             <td>This event is fired when the alert has been closed (will wait for css transitions to complete).</td>
+             <td>이 이벤트는 (css 전환이 끝난 후) 경고가 완전히 닫힐 때 발동한다.</td>
            </tr>
           </tbody>
         </table>
 <pre class="prettyprint linenums">
 $('#my-alert').bind('closed', function () {
-  // do something…
+  // 무언가를 한다…
 })
 </pre>
       </section>
 
 
 
-          <!-- Buttons
+          <!-- 버튼
           ================================================== -->
           <section id="buttons">
             <div class="page-header">
-              <h1>Buttons <small>bootstrap-button.js</small></h1>
+              <h1>버튼 <small>bootstrap-button.js</small></h1>
             </div>
 
-            <h2>Example uses</h2>
-            <p>Do more with buttons. Control button states or create groups of buttons for more components like toolbars.</p>
+            <h2>사용예</h2>
+            <p>버튼을 가지고 더 많은 작업을 한다. 버튼 상태를 제어하거나 도구 모음 같은 화면 구성요소를 위한 버튼 그룹을 만든다.</p>
 
-            <h4>Stateful</h4>
-            <p>Add <code>data-loading-text="Loading..."</code> to use a loading state on a button.</p>
+            <h4>버튼 상태</h4>
+            <p>버튼의 진행 상태를 사용하려면 <code>data-loading-text="읽는중..."</code>을 붙인다.</p>
             <div class="bs-docs-example" style="padding-bottom: 24px;">
-              <button type="button" id="fat-btn" data-loading-text="loading..." class="btn btn-primary">
-                Loading state
+              <button type="button" id="fat-btn" data-loading-text="읽는중..." class="btn btn-primary">
+                읽는 상태
               </button>
             </div>
-            <pre class="prettyprint linenums">&lt;button type="button" class="btn btn-primary" data-loading-text="Loading..."&gt;Loading state&lt;/button&gt;</pre>
+            <pre class="prettyprint linenums">&lt;button type="button" class="btn btn-primary" data-loading-text="읽는중..."&gt;읽는 상태&lt;/button&gt;</pre>
 
-            <h4>Single toggle</h4>
-            <p>Add <code>data-toggle="button"</code> to activate toggling on a single button.</p>
+            <h4>단일 켜고 끄기</h4>
+            <p>한 버튼을 켜고 끄기하려면 <code>data-toggle="button"</code>을 붙인다.</p>
             <div class="bs-docs-example" style="padding-bottom: 24px;">
-              <button type="button" class="btn btn-primary" data-toggle="button">Single Toggle</button>
+              <button type="button" class="btn btn-primary" data-toggle="button">단일 켜고 끄기</button>
             </div>
-            <pre class="prettyprint linenums">&lt;button type="button" class="btn btn-primary" data-toggle="button"&gt;Single Toggle&lt;/button&gt;</pre>
+            <pre class="prettyprint linenums">&lt;button type="button" class="btn btn-primary" data-toggle="button"&gt;단일 켜고 끄기&lt;/button&gt;</pre>
 
             <h4>Checkbox</h4>
-            <p>Add <code>data-toggle="buttons-checkbox"</code> for checkbox style toggling on btn-group.</p>
+            <p>btn-group을 checkbox 식으로 만들려면 <code>data-toggle="buttons-checkbox"</code>를 붙인다.</p>
             <div class="bs-docs-example" style="padding-bottom: 24px;">
               <div class="btn-group" data-toggle="buttons-checkbox">
-                <button type="button" class="btn btn-primary">Left</button>
-                <button type="button" class="btn btn-primary">Middle</button>
-                <button type="button" class="btn btn-primary">Right</button>
+                <button type="button" class="btn btn-primary">왼쪽</button>
+                <button type="button" class="btn btn-primary">중앙</button>
+                <button type="button" class="btn btn-primary">오른쪽</button>
               </div>
             </div>
 <pre class="prettyprint linenums">
 &lt;div class="btn-group" data-toggle="buttons-checkbox"&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Left&lt;/button&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Middle&lt;/button&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Right&lt;/button&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;왼쪽&lt;/button&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;중앙&lt;/button&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;오른쪽&lt;/button&gt;
 &lt;/div&gt;
 </pre>
 
             <h4>Radio</h4>
-            <p>Add <code>data-toggle="buttons-radio"</code> for radio style toggling on btn-group.</p>
+            <p>btn-group을 radio 식으로 만들려면 <code>data-toggle="buttons-radio"</code>를 붙인다.</p>
             <div class="bs-docs-example" style="padding-bottom: 24px;">
               <div class="btn-group" data-toggle="buttons-radio">
-                <button type="button" class="btn btn-primary">Left</button>
-                <button type="button" class="btn btn-primary">Middle</button>
-                <button type="button" class="btn btn-primary">Right</button>
+                <button type="button" class="btn btn-primary">왼쪽</button>
+                <button type="button" class="btn btn-primary">중앙</button>
+                <button type="button" class="btn btn-primary">오른쪽</button>
               </div>
             </div>
 <pre class="prettyprint linenums">
 &lt;div class="btn-group" data-toggle="buttons-radio"&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Left&lt;/button&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Middle&lt;/button&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Right&lt;/button&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;왼쪽&lt;/button&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;중앙&lt;/button&gt;
+  &lt;button type="button" class="btn btn-primary"&gt;오른쪽&lt;/button&gt;
 &lt;/div&gt;
 </pre>
 
@@ -1195,37 +1214,37 @@ $('#my-alert').bind('closed', function () {
             <hr class="bs-docs-separator">
 
 
-            <h2>Usage</h2>
-            <p>Enable buttons via JavaScript:</p>
+            <h2>사용 방법</h2>
+            <p>자바스크립트로 버튼을 만드는 방법이다.</p>
             <pre class="prettyprint linenums">$('.nav-tabs').button()</pre>
 
-            <h3>Markup</h3>
-            <p>Data attributes are integral to the button plugin. Check out the example code below for the various markup types.</p>
+            <h3>마크업</h3>
+            <p>Data 속성은 버튼 플러그인에 필수이다. 아래 다양한 마크업 종류를 담은 예제 코드를 살펴보라.</p>
 
-            <h3>Options</h3>
-            <p><em>None</em></p>
+            <h3>옵션</h3>
+            <p><em>없음</em></p>
 
-            <h3>Methods</h3>
+            <h3>메소드</h3>
             <h4>$().button('toggle')</h4>
-            <p>Toggles push state. Gives the button the appearance that it has been activated.</p>
+            <p>눌림 상태를 변경한다. 버튼의 눌린 외형을 만든다.</p>
             <div class="alert alert-info">
-              <strong>Heads up!</strong>
-              You can enable auto toggling of a button by using the <code>data-toggle</code> attribute.
+              <strong>주의!</strong>
+              <code>data-toggle</code> 속성을 사용하면 자동으로 켜고 끄는 버튼을 만들 수 있다.
             </div>
             <pre class="prettyprint linenums">&lt;button type="button" class="btn" data-toggle="button" &gt;…&lt;/button&gt;</pre>
             <h4>$().button('loading')</h4>
-            <p>Sets button state to loading - disables button and swaps text to loading text. Loading text should be defined on the button element using the data attribute <code>data-loading-text</code>.
+            <p>버튼을 읽기 상태로 변경한다. 그러면 버튼을 비활성하고 읽기 문구로 바꾼다. 읽기 문구는 data 속성 <code>data-loading-text</code>를 사용하여 버튼 태그에 정의해야 한다.
             </p>
-            <pre class="prettyprint linenums">&lt;button type="button" class="btn" data-loading-text="loading stuff..." &gt;...&lt;/button&gt;</pre>
+            <pre class="prettyprint linenums">&lt;button type="button" class="btn" data-loading-text="무엇을 읽는중..." &gt;...&lt;/button&gt;</pre>
             <div class="alert alert-info">
-              <strong>Heads up!</strong>
-              <a href="https://github.com/twitter/bootstrap/issues/793">Firefox persists the disabled state across page loads</a>. A workaround for this is to use <code>autocomplete="off"</code>.
+              <strong>주의!</strong>
+              <a href="https://github.com/twitter/bootstrap/issues/793">파이어폭스는 페이지를 다시 읽어도 비활성 상태를 유지한다</a>. <code>autocomplete="off"</code>를 사용하여 이 문제를 해결한다.
             </div>
             <h4>$().button('reset')</h4>
-            <p>Resets button state - swaps text to original text.</p>
+            <p>버튼 상태를 재설정한다. 원래 문구로 되돌아간다.</p>
             <h4>$().button(string)</h4>
-            <p>Resets button state - swaps text to any data defined text state.</p>
-<pre class="prettyprint linenums">&lt;button type="button" class="btn" data-complete-text="finished!" &gt;...&lt;/button&gt;
+            <p>버튼 상태를 재설정한다. data로 정의한 문구를 보여준다.</p>
+<pre class="prettyprint linenums">&lt;button type="button" class="btn" data-complete-text="완료!" &gt;...&lt;/button&gt;
 &lt;script&gt;
   $('.btn').button('complete')
 &lt;/script&gt;
@@ -1234,55 +1253,55 @@ $('#my-alert').bind('closed', function () {
 
 
 
-          <!-- Collapse
+          <!-- 숨김
           ================================================== -->
           <section id="collapse">
             <div class="page-header">
-              <h1>Collapse <small>bootstrap-collapse.js</small></h1>
+              <h1>숨김 (collapse) <small>bootstrap-collapse.js</small></h1>
             </div>
 
-            <h3>About</h3>
-            <p>Get base styles and flexible support for collapsible components like accordions and navigation.</p>
-            <p class="muted"><strong>*</strong> Requires the Transitions plugin to be included.</p>
+            <h3>숨김 플러그인이란</h3>
+            <p>아코디언과 탐색 같은 숨김 가능한 화면 구성요소에 기본 스타일을 입히고 유연하게 지원한다.</p>
+            <p class="muted"><strong>*</strong> 전환 플러그인이 필요하다.</p>
 
-            <h2>Example accordion</h2>
-            <p>Using the collapse plugin, we built a simple accordion style widget:</p>
+            <h2>아코디언 예제</h2>
+            <p>숨김 플러그인을 사용하여 간단한 아코디언식 위젯을 만들었다.</p>
 
             <div class="bs-docs-example">
               <div class="accordion" id="accordion2">
                 <div class="accordion-group">
                   <div class="accordion-heading">
                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                      Collapsible Group Item #1
+                      숨김 가능한 그룹 항목 #1
                     </a>
                   </div>
                   <div id="collapseOne" class="accordion-body collapse in">
                     <div class="accordion-inner">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      종래 경영관리(經營管理)라 하면 공업이라든가 또는 사업을 그 대상으로 생각하고 있었다. 따라서 경영에 관한 학문적 연구에 있어서도 병원경영에 대해서는 별다른 실적이 없으며, 이에 대한 관심도 그다지 크지 않았다. 그러나 최근에 와서는 병원의 경영규모가 확대됨에 따라 그 관리도 점차 복잡해졌고, 이에 따라 병원의 합리적 경영관리에 대한 필요성이 일반기업, 예컨대 제조업이나 금융업 등에 비하여 뒤지지 않게 되었다. 다시 말해서 병원의 규모확대는 병원의 합리적 운영·관리의 필요성을 요구하게 되었고, 이에 따라 타기업의 경우와 같이 과학적 사고를 폭넓게 받아들여야 한다.
                     </div>
                   </div>
                 </div>
                 <div class="accordion-group">
                   <div class="accordion-heading">
                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                      Collapsible Group Item #2
+                      숨김 가능한 그룹 항목 #2
                     </a>
                   </div>
                   <div id="collapseTwo" class="accordion-body collapse">
                     <div class="accordion-inner">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      종래 경영관리(經營管理)라 하면 공업이라든가 또는 사업을 그 대상으로 생각하고 있었다. 따라서 경영에 관한 학문적 연구에 있어서도 병원경영에 대해서는 별다른 실적이 없으며, 이에 대한 관심도 그다지 크지 않았다. 그러나 최근에 와서는 병원의 경영규모가 확대됨에 따라 그 관리도 점차 복잡해졌고, 이에 따라 병원의 합리적 경영관리에 대한 필요성이 일반기업, 예컨대 제조업이나 금융업 등에 비하여 뒤지지 않게 되었다. 다시 말해서 병원의 규모확대는 병원의 합리적 운영·관리의 필요성을 요구하게 되었고, 이에 따라 타기업의 경우와 같이 과학적 사고를 폭넓게 받아들여야 한다.
                     </div>
                   </div>
                 </div>
                 <div class="accordion-group">
                   <div class="accordion-heading">
                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-                      Collapsible Group Item #3
+                      숨김 가능한 그룹 항목 #3
                     </a>
                   </div>
                   <div id="collapseThree" class="accordion-body collapse">
                     <div class="accordion-inner">
-                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      종래 경영관리(經營管理)라 하면 공업이라든가 또는 사업을 그 대상으로 생각하고 있었다. 따라서 경영에 관한 학문적 연구에 있어서도 병원경영에 대해서는 별다른 실적이 없으며, 이에 대한 관심도 그다지 크지 않았다. 그러나 최근에 와서는 병원의 경영규모가 확대됨에 따라 그 관리도 점차 복잡해졌고, 이에 따라 병원의 합리적 경영관리에 대한 필요성이 일반기업, 예컨대 제조업이나 금융업 등에 비하여 뒤지지 않게 되었다. 다시 말해서 병원의 규모확대는 병원의 합리적 운영·관리의 필요성을 요구하게 되었고, 이에 따라 타기업의 경우와 같이 과학적 사고를 폭넓게 받아들여야 한다.
                     </div>
                   </div>
                 </div>
@@ -1293,34 +1312,34 @@ $('#my-alert').bind('closed', function () {
   &lt;div class="accordion-group"&gt;
     &lt;div class="accordion-heading"&gt;
       &lt;a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne"&gt;
-        Collapsible Group Item #1
+        숨김 가능한 그룹 항목 #1
       &lt;/a&gt;
     &lt;/div&gt;
     &lt;div id="collapseOne" class="accordion-body collapse in"&gt;
       &lt;div class="accordion-inner"&gt;
-        Anim pariatur cliche...
+        종래 경영관리...
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class="accordion-group"&gt;
     &lt;div class="accordion-heading"&gt;
       &lt;a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo"&gt;
-        Collapsible Group Item #2
+        숨김 가능한 그룹 항목 #2
       &lt;/a&gt;
     &lt;/div&gt;
     &lt;div id="collapseTwo" class="accordion-body collapse"&gt;
       &lt;div class="accordion-inner"&gt;
-        Anim pariatur cliche...
+        종래 경영관리...
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 ...
 </pre>
-            <p>You can also use the plugin without the accordion markup. Make a button toggle the expanding and collapsing of another element.</p>
+            <p>아코디언 마크업 없이 플러그인을 사용할 수도 있다. 다른 태그를 확장하고 숨기는 버튼을 만든다.</p>
 <pre class="prettyprint linenums">
 &lt;button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo"&gt;
-  simple collapsible
+  간단한 숨김
 &lt;/button&gt;
 
 &lt;div id="demo" class="collapse in"&gt; … &lt;/div&gt;
@@ -1330,176 +1349,186 @@ $('#my-alert').bind('closed', function () {
             <hr class="bs-docs-separator">
 
 
-            <h2>Usage</h2>
+            <h2>사용 방법</h2>
 
-            <h3>Via data attributes</h3>
-            <p>Just add <code>data-toggle="collapse"</code> and a <code>data-target</code> to element to automatically assign control of a collapsible element. The <code>data-target</code> attribute accepts a css selector to apply the collapse to. Be sure to add the class <code>collapse</code> to the collapsible element. If you'd like it to default open, add the additional class <code>in</code>.</p>
-            <p>To add accordion-like group management to a collapsible control, add the data attribute <code>data-parent="#selector"</code>. Refer to the demo to see this in action.</p>
+            <h3>data 속성으로</h3>
+            <p>태그에 <code>data-toggle="collapse"</code>와 a <code>data-target</code>을 붙이기만 하면 숨김 가능한 다른 태그를 제어하게 된다. <code>data-target</code> 속성은 숨김을 적용할 css 선택자를 값으로 받는다. 숨김 가능한 태그에 <code>collapse</code> 클래스를 잊지 마라. 처음에 열려있기를 바란다면 <code>in</code> 클래스도 추가하라.</p>
+            <p>숨김 가능한 대상을 아코디언처럼 묶어서 관리하려면 data 속성 <code>data-parent="#selector"</code>를 추가한다. 어떻게 동작하는지 시연을 참고하라.</p>
 
-            <h3>Via JavaScript</h3>
-            <p>Enable manually with:</p>
+            <h3>자바스크립트로</h3>
+            <p>이렇게 직접 만들 수 있다.</p>
             <pre class="prettyprint linenums">$(".collapse").collapse()</pre>
 
-            <h3>Options</h3>
-            <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-parent=""</code>.</p>
+            <h3>옵션</h3>
+            <p>data 속성과 자바스크립트 모두 옵션을 지정할 수 있다. data 속성 사용시 <code>data-parent=""</code> 처럼 <code>data-</code> 뒤에 옵션 이름을 붙인다.</p>
             <table class="table table-bordered table-striped">
               <thead>
                <tr>
-                 <th style="width: 100px;">Name</th>
-                 <th style="width: 50px;">type</th>
-                 <th style="width: 50px;">default</th>
-                 <th>description</th>
+                 <th style="width: 100px;">이름</th>
+                 <th style="width: 50px;">자료형</th>
+                 <th style="width: 50px;">기본값</th>
+                 <th>설명</th>
                </tr>
               </thead>
               <tbody>
                <tr>
                  <td>parent</td>
-                 <td>selector</td>
+                 <td>선택자</td>
                  <td>false</td>
-                 <td>If selector then all collapsible elements under the specified parent will be closed when this collapsible item is shown. (similar to traditional accordion behavior)</td>
+                 <td>선택자를 명시하면, 선택 가능한 항목을 보여줄 때 선택자 아래에 있는 숨김 가능한 모든 태그가 닫힌다. (전통적인 아코디언 동작과 유사)</td>
                </tr>
                <tr>
                  <td>toggle</td>
                  <td>boolean</td>
                  <td>true</td>
-                 <td>Toggles the collapsible element on invocation</td>
+                 <td>호출하면 숨김 가능한 태그를 켜고 닫는다</td>
                </tr>
               </tbody>
             </table>
 
 
-            <h3>Methods</h3>
+            <h3>메소드</h3>
             <h4>.collapse(options)</h4>
-            <p>Activates your content as a collapsible element. Accepts an optional options <code>object</code>.
+            <p>내용을 숨김 가능한 태그로 만든다. 선택적으로 options <code>객체</code>를 받는다.
 <pre class="prettyprint linenums">
 $('#myCollapsible').collapse({
   toggle: false
 })
 </pre>
             <h4>.collapse('toggle')</h4>
-            <p>Toggles a collapsible element to shown or hidden.</p>
+            <p>선택 가능한 태그를 켜고 끈다.</p>
             <h4>.collapse('show')</h4>
-            <p>Shows a collapsible element.</p>
+            <p>선택 가능한 태그를 보인다.</p>
             <h4>.collapse('hide')</h4>
-            <p>Hides a collapsible element.</p>
+            <p>선택 가능한 태그를 숨긴다.</p>
 
-            <h3>Events</h3>
-            <p>Bootstrap's collapse class exposes a few events for hooking into collapse functionality.</p>
+            <h3>이벤트</h3>
+            <p>부트스트랩 숨김 클래스는 숨김 기능과 연결된 몇가지 이벤트를 가진다.</p>
             <table class="table table-bordered table-striped">
               <thead>
                <tr>
-                 <th style="width: 150px;">Event</th>
-                 <th>Description</th>
+                 <th style="width: 150px;">이벤트</th>
+                 <th>설명</th>
                </tr>
               </thead>
               <tbody>
                <tr>
                  <td>show</td>
-                 <td>This event fires immediately when the <code>show</code> instance method is called.</td>
+                 <td>이 이벤트는 <code>show</code> 인스턴스 메소드가 불리자마자 발동한다.</td>
                </tr>
                <tr>
                  <td>shown</td>
-                 <td>This event is fired when a collapse element has been made visible to the user (will wait for css transitions to complete).</td>
+                 <td>이 이벤트는 (css 전환이 끝난 후) 숨김 대상 태그가 사용자에게 완전히 보일 때 발동한다.</td>
                </tr>
                <tr>
                  <td>hide</td>
                  <td>
-                  This event is fired immediately when the <code>hide</code> method has been called.
+                  이 이벤트는 <code>hide</code> 인스턴스 메소드가 불리자마자 발동한다.
                  </td>
                </tr>
                <tr>
                  <td>hidden</td>
-                 <td>This event is fired when a collapse element has been hidden from the user (will wait for css transitions to complete).</td>
+                 <td>이 이벤트는 (css 전환이 끝난 후) 숨김 대상 태그가 사용자에게 완전히 사라질 때 발동한다.</td>
                </tr>
               </tbody>
             </table>
 <pre class="prettyprint linenums">
 $('#myCollapsible').on('hidden', function () {
-  // do something…
+  // 무언가를 한다…
 })</pre>
           </section>
 
 
 
-           <!-- Carousel
+           <!-- 회전광고판
           ================================================== -->
           <section id="carousel">
             <div class="page-header">
-              <h1>Carousel <small>bootstrap-carousel.js</small></h1>
+              <h1>회전광고판 (carousel) <small>bootstrap-carousel.js</small></h1>
             </div>
 
-            <h2>Example carousel</h2>
-            <p>The slideshow below shows a generic plugin and component for cycling through elements like a carousel.</p>
+            <h2>회전광고판 예제</h2>
+            <p>아래 슬라이드쇼는 회전광고판처럼 태그를 하나씩 둘러보는 일반 플러그인과 화면 구성요소를 보여준다.</p>
             <div class="bs-docs-example">
               <div id="myCarousel" class="carousel slide">
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
                 <div class="carousel-inner">
                   <div class="item active">
                     <img src="assets/img/bootstrap-mdo-sfmoma-01.jpg" alt="">
                     <div class="carousel-caption">
-                      <h4>First Thumbnail label</h4>
-                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                      <h4>첫번째 미리보기 제목</h4>
+                      <p>고블랭은 유럽 석조건축과 분리시켜 생각할 수 없다. 차갑고 딱딱한 석벽에 걸은 태피스트리로 발달된 것으로서 중세의 성곽이나 사원 내부에서는 없어서는 안될 물건이었을 것이다.</p>
                     </div>
                   </div>
                   <div class="item">
                     <img src="assets/img/bootstrap-mdo-sfmoma-02.jpg" alt="">
                     <div class="carousel-caption">
-                      <h4>Second Thumbnail label</h4>
-                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                      <h4>두번째 미리보기 제목</h4>
+                      <p>고블랭은 유럽 석조건축과 분리시켜 생각할 수 없다. 차갑고 딱딱한 석벽에 걸은 태피스트리로 발달된 것으로서 중세의 성곽이나 사원 내부에서는 없어서는 안될 물건이었을 것이다.</p>
                     </div>
                   </div>
                   <div class="item">
                     <img src="assets/img/bootstrap-mdo-sfmoma-03.jpg" alt="">
                     <div class="carousel-caption">
-                      <h4>Third Thumbnail label</h4>
-                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                      <h4>세번째 미리보기 제목</h4>
+                      <p>고블랭은 유럽 석조건축과 분리시켜 생각할 수 없다. 차갑고 딱딱한 석벽에 걸은 태피스트리로 발달된 것으로서 중세의 성곽이나 사원 내부에서는 없어서는 안될 물건이었을 것이다.</p>
                     </div>
                   </div>
                 </div>
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                <a class="left carousel-control en-font-family" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                <a class="right carousel-control en-font-family" href="#myCarousel" data-slide="next">&rsaquo;</a>
               </div>
             </div>
 <pre class="prettyprint linenums">
 &lt;div id="myCarousel" class="carousel slide"&gt;
-  &lt;!-- Carousel items --&gt;
+  &lt;ol class="carousel-indicators"&gt
+    &lt;li data-target="#myCarousel" data-slide-to="0" class="active"&gt&lt;/li&gt
+    &lt;li data-target="#myCarousel" data-slide-to="1"&gt&lt;/li&gt
+    &lt;li data-target="#myCarousel" data-slide-to="2"&gt&lt;/li&gt
+  &lt;/ol&gt
+  &lt;!-- 회전광고판 항목 --&gt;
   &lt;div class="carousel-inner"&gt;
     &lt;div class="active item"&gt;…&lt;/div&gt;
     &lt;div class="item"&gt;…&lt;/div&gt;
     &lt;div class="item"&gt;…&lt;/div&gt;
   &lt;/div&gt;
-  &lt;!-- Carousel nav --&gt;
+  &lt;!-- 회전광고판 탐색 --&gt;
   &lt;a class="carousel-control left" href="#myCarousel" data-slide="prev"&gt;&amp;lsaquo;&lt;/a&gt;
   &lt;a class="carousel-control right" href="#myCarousel" data-slide="next"&gt;&amp;rsaquo;&lt;/a&gt;
 &lt;/div&gt;
 </pre>
-
+            <p><span class="label label-info">한글 글꼴!</span> <code>bootstrap-ko.css</code>와 <code>bootstrap-ko.min.css</code> 파일을 사용한다면 회전광고판 탐색 화살표가 이상하게 보인다. 이 경우 회전광고판 탐색 태그에 <code>en-font-family</code> 클래스를 더하여 원래 영어 글꼴로 바꾼다.</p>
             <div class="alert alert-warning">
-              <strong>Heads up!</strong>
-              When implementing this carousel, remove the images we have provided and replace them with your own.
+              <strong>주의!</strong>
+              회전광고판을 만들 때 예제 그림을 지우고 여러분이 사용할 그림으로 대체하라.
             </div>
 
 
             <hr class="bs-docs-separator">
 
 
-            <h2>Usage</h2>
+            <h2>사용 방법</h2>
 
-            <h3>Via data attributes</h3>
-            <p>...</p>
+            <h3>data 속성으로</h3>
+            <p>data 속성을 사용하여 회전광고판 순서를 쉽게 제어할 수 있다. <code>data-slide</code>는 현재 순서를 기준으로 슬라이드 순서를 바꾸는 키워드 <code>prev</code>와 <code>next</code>를 값으로 받는다. 아니면 <code>data-slide-to</code>에 회전광고판 슬라이드 순서를 넘긴다. <code>data-slide-to="2"</code>와 같이 <code>0</code>부터 시작하는 슬라이드 순서로 건너뛴다.</p>
 
-            <h3>Via JavaScript</h3>
-            <p>Call carousel manually with:</p>
+            <h3>자바스크립트로</h3>
+            <p>이렇게 회전광고판을 직접 만든다.</p>
             <pre class="prettyprint linenums">$('.carousel').carousel()</pre>
 
-            <h3>Options</h3>
-            <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-interval=""</code>.</p>
+            <h3>옵션</h3>
+            <p>data 속성과 자바스크립트 모두 옵션을 지정할 수 있다. data 속성 사용시 <code>data-interval=""</code> 처럼 <code>data-</code> 뒤에 옵션 이름을 붙인다.</p>
             <table class="table table-bordered table-striped">
               <thead>
                <tr>
-                 <th style="width: 100px;">Name</th>
-                 <th style="width: 50px;">type</th>
-                 <th style="width: 50px;">default</th>
-                 <th>description</th>
+                 <th style="width: 100px;">이름</th>
+                 <th style="width: 50px;">자료형</th>
+                 <th style="width: 50px;">기본값</th>
+                 <th>설명</th>
                </tr>
               </thead>
               <tbody>
@@ -1507,53 +1536,53 @@ $('#myCollapsible').on('hidden', function () {
                  <td>interval</td>
                  <td>number</td>
                  <td>5000</td>
-                 <td>The amount of time to delay between automatically cycling an item. If false, carousel will not automatically cycle.</td>
+                 <td>자동으로 항목을 전환하는 지연 시간. false이면, 회전광고판이 자동으로 회전하지 않는다.</td>
                </tr>
                <tr>
                  <td>pause</td>
                  <td>string</td>
                  <td>"hover"</td>
-                 <td>Pauses the cycling of the carousel on mouseenter and resumes the cycling of the carousel on mouseleave.</td>
+                 <td>마우스가 들어오면 회전광고판 회전을 잠시 멈추고, 마우스가 나가면 회전을 재개한다.</td>
                </tr>
               </tbody>
             </table>
 
-            <h3>Methods</h3>
+            <h3>메소드</h3>
             <h4>.carousel(options)</h4>
-            <p>Initializes the carousel with an optional options <code>object</code> and starts cycling through items.</p>
+            <p>선택적인 options <code>객체</code>를 가지고 회전광고판을 초기화하고 항목들을 회전하기 시작한다.</p>
 <pre class="prettyprint linenums">
 $('.carousel').carousel({
   interval: 2000
 })
 </pre>
             <h4>.carousel('cycle')</h4>
-            <p>Cycles through the carousel items from left to right.</p>
+            <p>회전광고판 항목들을 왼쪽에서 오른쪽으로 회전한다.</p>
             <h4>.carousel('pause')</h4>
-            <p>Stops the carousel from cycling through items.</p>
+            <p>회전광고판 항목들 회전을 중지한다.</p>
             <h4>.carousel(number)</h4>
-            <p>Cycles the carousel to a particular frame (0 based, similar to an array).</p>
+            <p>특정 항목으로 회전광고판을 이동한다 (배열과 비슷하게 0부터 시작).</p>
             <h4>.carousel('prev')</h4>
-            <p>Cycles to the previous item.</p>
+            <p>이전 항목으로 이동한다.</p>
             <h4>.carousel('next')</h4>
-            <p>Cycles to the next item.</p>
+            <p>다음 항목으로 이동한다.</p>
 
-            <h3>Events</h3>
-            <p>Bootstrap's carousel class exposes two events for hooking into carousel functionality.</p>
+            <h3>이벤트</h3>
+            <p>부트스트랩 회전광고판 클래스는 회전광고판 기능과 연결된 두가지 이벤트를 가진다.</p>
             <table class="table table-bordered table-striped">
               <thead>
                <tr>
-                 <th style="width: 150px;">Event</th>
-                 <th>Description</th>
+                 <th style="width: 150px;">이벤트</th>
+                 <th>설명</th>
                </tr>
               </thead>
               <tbody>
                <tr>
                  <td>slide</td>
-                 <td>This event fires immediately when the <code>slide</code> instance method is invoked.</td>
+                 <td>이 이벤트는 <code>slide</code> 인스턴스 메소드가 불리자마자 발동한다.</td>
                </tr>
                <tr>
                  <td>slid</td>
-                 <td>This event is fired when the carousel has completed its slide transition.</td>
+                 <td>이 이벤트는 회전광고판이 슬라이드 전환을 완전히 마칠 때 발동한다.</td>
                </tr>
               </tbody>
             </table>
@@ -1561,43 +1590,44 @@ $('.carousel').carousel({
 
 
 
-          <!-- Typeahead
+          <!-- 자동완성
           ================================================== -->
           <section id="typeahead">
             <div class="page-header">
-              <h1>Typeahead <small>bootstrap-typeahead.js</small></h1>
+              <h1>자동완성 (typeahead) <small>bootstrap-typeahead.js</small></h1>
             </div>
 
 
-            <h2>Example</h2>
-            <p>A basic, easily extended plugin for quickly creating elegant typeaheads with any form text input.</p>
+            <h2>사용예</h2>
+            <p>어떤 종류의 문자 input이라도 순식간에 멋진 자동완성을 붙이는 기본적이며 쉽게 확장가능한 플러그인.</p>
             <div class="bs-docs-example" style="background-color: #f5f5f5;">
               <input type="text" class="span3" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>
             </div>
             <pre class="prettyprint linenums">&lt;input type="text" data-provide="typeahead"&gt;</pre>
-
+            <p><span class="label label-info">한글!</span> 검색 포털에서 볼 수 있는 한글 자소단위 자동완성은 지원하지 않다.</p>
+            <p>웹브라우저 기본 메뉴가 부트스트랩 자동완성 드롭다운을 가리지 않도록 <code>autocomplete="off"</code>가 필요할 것이다.</p>
 
             <hr class="bs-docs-separator">
 
 
-            <h2>Usage</h2>
+            <h2>사용 방법</h2>
 
-            <h3>Via data attributes</h3>
-            <p>Add data attributes to register an element with typeahead functionality as shown in the example above.</p>
+            <h3>data 속성으로</h3>
+            <p>위 사용예와 같이 data 속성을 추가하여 태그에 자동완성 기능을 등록한다.</p>
 
             <h3>Via JavaScript</h3>
-            <p>Call the typeahead manually with:</p>
+            <p>이렇게 직접 자동완성을 만들 수 있다.</p>
             <pre class="prettyprint linenums">$('.typeahead').typeahead()</pre>
 
-            <h3>Options</h3>
-            <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-source=""</code>.</p>
+            <h3>옵션</h3>
+            <p>data 속성과 자바스크립트 모두 옵션을 지정할 수 있다. data 속성 사용시 <code>data-source=""</code> 처럼 <code>data-</code> 뒤에 옵션 이름을 붙인다.</p>
             <table class="table table-bordered table-striped">
               <thead>
                <tr>
-                 <th style="width: 100px;">Name</th>
-                 <th style="width: 50px;">type</th>
-                 <th style="width: 100px;">default</th>
-                 <th>description</th>
+                 <th style="width: 100px;">이름</th>
+                 <th style="width: 50px;">자료형</th>
+                 <th style="width: 100px;">기본값</th>
+                 <th>설명</th>
                </tr>
               </thead>
               <tbody>
@@ -1605,99 +1635,91 @@ $('.carousel').carousel({
                  <td>source</td>
                  <td>array, function</td>
                  <td>[ ]</td>
-                 <td>The data source to query against. May be an array of strings or a function. The function is passed two arguments, the <code>query</code> value in the input field and the <code>process</code> callback. The function may be used synchronously by returning the data source directly or asynchronously via the <code>process</code> callback's single argument.</td>
+                 <td>검색할 자료. 문자열의 배열이나 함수가 들어간다. 함수는 input 입력요소값 <code>query</code>와 콜백 <code>process</code>, 이 두 아규먼트를 받는다. 함수는 자료를 직접 반환하는 동기 방식 혹은 <code>process</code> 콜백의 유일한 아규먼트를 통한 비동기 방식으로 사용한다.</td>
                </tr>
                <tr>
                  <td>items</td>
                  <td>number</td>
                  <td>8</td>
-                 <td>The max number of items to display in the dropdown.</td>
+                 <td>드롭다운에 보여줄 항목 최대 개수.</td>
                </tr>
                <tr>
                  <td>minLength</td>
                  <td>number</td>
                  <td>1</td>
-                 <td>The minimum character length needed before triggering autocomplete suggestions</td>
+                 <td>자동완성 제안을 시작할 최소 문자 길이</td>
                </tr>
                <tr>
                  <td>matcher</td>
                  <td>function</td>
-                 <td>case insensitive</td>
-                 <td>The method used to determine if a query matches an item. Accepts a single argument, the <code>item</code> against which to test the query. Access the current query with <code>this.query</code>. Return a boolean <code>true</code> if query is a match.</td>
+                 <td>대소문자 무시</td>
+                 <td>항목이 검색에 맞는지 알아보는 메소드. 검색어와 맞추어 볼 <code>item</code> 아규먼트 하나를 받는다. 현재 검색어는 <code>this.query</code>이다. 검색어가 맞다면 boolean <code>true</code>를 반환한다.</td>
                </tr>
                <tr>
                  <td>sorter</td>
                  <td>function</td>
-                 <td>exact match,<br> case sensitive,<br> case insensitive</td>
-                 <td>Method used to sort autocomplete results. Accepts a single argument <code>items</code> and has the scope of the typeahead instance. Reference the current query with <code>this.query</code>.</td>
+                 <td>정확히 일치,<br> 대소문자 구별,<br> 대소문자 무시 순서로</td>
+                 <td>자동완성 결과의 순서를 결정하는 메소드. <code>items</code> 아규먼트 하나를 받고, 변수의 범위는 자동완성 인스턴스이다. 현재 검색어는 <code>this.query</code>로 접근한다.</td>
                </tr>
                <tr>
                  <td>updater</td>
                  <td>function</td>
-                 <td>returns selected item</td>
-                 <td>The method used to return selected item. Accepts a single argument, the <code>item</code> and has the scope of the typeahead instance.</td>
+                 <td>선택한 항목을 반환</td>
+                 <td>선택한 항목을 반환하는 메소드. <code>item</code> 아규먼트 하나를 받고, 변수의 범위는 자동완성 인스턴스이다.</td>
                </tr>
                <tr>
                  <td>highlighter</td>
                  <td>function</td>
-                 <td>highlights all default matches</td>
-                 <td>Method used to highlight autocomplete results. Accepts a single argument <code>item</code> and has the scope of the typeahead instance. Should return html.</td>
+                 <td>기본 일치를 모두 강조</td>
+                 <td>자동완성 결과를 강조하는 메소드. <code>item</code> 아규먼트 하나를 받고, 변수의 범위는 자동완성 인스턴스이다. html을 반환해야 한다.</td>
                </tr>
               </tbody>
             </table>
 
-            <h3>Methods</h3>
+            <h3>메소드</h3>
             <h4>.typeahead(options)</h4>
-            <p>Initializes an input with a typeahead.</p>
+            <p>input에 자동완성을 초기화한다.</p>
           </section>
 
 
 
-          <!-- Affix
+          <!-- 애픽스 메뉴
           ================================================== -->
           <section id="affix">
             <div class="page-header">
-              <h1>Affix <small>bootstrap-affix.js</small></h1>
+              <h1>애픽스 메뉴 <small>bootstrap-affix.js</small></h1>
             </div>
 
-            <h2>Example</h2>
-            <p>The subnavigation on the left is a live demo of the affix plugin.</p>
+            <h2>사용예</h2>
+            <p>바로 왼쪽의 탐색이 바로 애픽스 메뉴 플러그인의 결과이다.</p>
 
             <hr class="bs-docs-separator">
 
-            <h2>Usage</h2>
+            <h2>사용 방법</h2>
 
-            <h3>Via data attributes</h3>
-            <p>To easily add affix behavior to any element, just add <code>data-spy="affix"</code> to the element you want to spy on. Then use offsets to define when to toggle the pinning of an element on and off.</p>
+            <h3>data 속성으로</h3>
+            <p>애픽스 메뉴는 추적할 태그에 <code>data-spy="affix"</code>를 붙이기만 하면 된다. 그리고 offset으로 언제 태그 표시를 켜고 끌지 정한다.</p>
 
             <pre class="prettyprint linenums">&lt;div data-spy="affix" data-offset-top="200"&gt;...&lt;/div&gt;</pre>
 
             <div class="alert alert-info">
-              <strong>Heads up!</strong>
-              You must manage the position of a pinned element and the behavior of its immediate parent. Position is controlled by <code>affix</code>, <code>affix-top</code>, and <code>affix-bottom</code>. Remember to check for a potentially collapsed parent when the affix kicks in as it's removing content from the normal flow of the page.
+              <strong>주의!</strong>
+              표시할 태그의 위치와 바로 상위 태그의 동작을 관리해야 한다. <code>affix</code>, <code>affix-top</code>, <code>affix-bottom</code>으로 위치를 조절한다. 애픽스 메뉴를 만들 때 페이지의 일반적인 흐름에서 내용이 삭제되어 상위 태그가 숨겨지지는 않는지 확인해야 한다.
             </div>
 
-            <h3>Via JavaScript</h3>
-            <p>Call the affix plugin via JavaScript:</p>
+            <h3>자바스크립트로</h3>
+            <p>자바스크립트로 애픽스 메뉴를 만들 수 있다.</p>
             <pre class="prettyprint linenums">$('#navbar').affix()</pre>
 
-            <h3>Methods</h3>
-            <h4>.affix('refresh')</h4>
-            <p>When using affix in conjunction with adding or removing of elements from the DOM, you'll want to call the refresh method:</p>
-<pre class="prettyprint linenums">
-$('[data-spy="affix"]').each(function () {
-  $(this).affix('refresh')
-});
-</pre>
-          <h3>Options</h3>
-          <p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-offset-top="200"</code>.</p>
+          <h3>옵션</h3>
+          <p>data 속성과 자바스크립트 모두 옵션을 지정할 수 있다. data 속성 사용시 <code>data-offset-top="200"</code> 처럼 <code>data-</code> 뒤에 옵션 이름을 붙인다.</p>
           <table class="table table-bordered table-striped">
             <thead>
              <tr>
-               <th style="width: 100px;">Name</th>
-               <th style="width: 100px;">type</th>
-               <th style="width: 50px;">default</th>
-               <th>description</th>
+               <th style="width: 100px;">이름</th>
+               <th style="width: 100px;">자료형</th>
+               <th style="width: 50px;">기본값</th>
+               <th>설명</th>
              </tr>
             </thead>
             <tbody>
@@ -1705,7 +1727,7 @@ $('[data-spy="affix"]').each(function () {
                <td>offset</td>
                <td>number | function | object</td>
                <td>10</td>
-               <td>Pixels to offset from screen when calculating position of scroll. If a single number is provided, the offset will be applied in both top and left directions. To listen for a single direction, or multiple unique offsets, just provide an object <code>offset: { x: 10 }</code>. Use a function when you need to dynamically provide an offset (useful for some responsive designs).</td>
+               <td>스크롤 위치를 계산할 때 상단에 추가할 픽셀. 숫자 하나를 사용하면, 위쪽과 왼쪽에 모두 간격을 적용한다. 한쪽 방향만 원하거나 방향마다 간격을 다르게 주려면, <code>offset: { x: 10 }</code> 같은 객체를 사용한다. 동적으로 (일부 반응형 디자인에 유용) 간격을 지정하려면 함수를 사용한다.</td>
              </tr>
             </tbody>
           </table>
@@ -1724,24 +1746,24 @@ $('[data-spy="affix"]').each(function () {
     ================================================== -->
     <footer class="footer">
       <div class="container">
-        <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
-        <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
-        <p><a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p><a href="http://twitter.com/mdo" target="_blank">@mdo</a>와 <a href="http://twitter.com/fat" target="_blank">@fat</a>가 온세상의 사랑을 담아 디자인하고 만듬.</p>
+        <p>소스 라이선스는 <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">아파치 라이선스 v2.0</a>, 문서는 <a href="http://creativecommons.org/licenses/by/3.0/">크리에이티브 커먼즈 3.0</a>.</p>
+        <p><a href="http://glyphicons.com">글리피콘스 프리</a>의 라이선스는 <a href="http://creativecommons.org/licenses/by/3.0/">크리에이티브 커먼즈 3.0</a>.</p>
         <ul class="footer-links">
-          <li><a href="http://blog.getbootstrap.com">Blog</a></li>
+          <li><a href="http://blog.getbootstrap.com">블로그</a></li>
           <li class="muted">&middot;</li>
-          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">Issues</a></li>
+          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">문제점</a></li>
           <li class="muted">&middot;</li>
-          <li><a href="https://github.com/twitter/bootstrap/wiki">Roadmap and changelog</a></li>
+          <li><a href="https://github.com/twitter/bootstrap/blob/master/CHANGELOG.md">수정사항</a></li>
         </ul>
       </div>
     </footer>
 
 
 
-    <!-- Le javascript
+    <!-- 자바스크립트
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- 페이지를 빨리 읽어들이도록 문서 마지막에 배치 -->
     <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/bootstrap-transition.js"></script>
@@ -1764,9 +1786,9 @@ $('[data-spy="affix"]').each(function () {
     <script src="assets/js/application.js"></script>
 
 
-    <!-- Analytics
+    <!-- 웹로그 분석
     ================================================== -->
-    <script>
+    <!--<script>
       var _gauges = _gauges || [];
       (function() {
         var t   = document.createElement('script');
@@ -1778,7 +1800,7 @@ $('[data-spy="affix"]').each(function () {
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(t, s);
       })();
-    </script>
+    </script>-->
 
   </body>
 </html>

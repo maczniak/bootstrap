@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap, from Twitter</title>
+    <title>트위터의 부트스트랩</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- Le styles -->
-    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <!-- 스타일 -->
+    <link href="../assets/css/bootstrap-ko.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -17,12 +17,12 @@
     </style>
     <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!-- IE6~8에서 HTML5 태그를 지원하기위한 HTML5 shim -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="../assets/js/html5shiv.js"></script>
     <![endif]-->
 
-    <!-- Fav and touch icons -->
+    <!-- 파비콘과 앱 아이콘 -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
@@ -35,34 +35,34 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="#">Project name</a>
+          </button>
+          <a class="brand" href="#">프로젝트명</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li class="active"><a href="#">대문</a></li>
+              <li><a href="#about">소개</a></li>
+              <li><a href="#contact">연락처</a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">드롭다운 <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
+                  <li><a href="#">행동</a></li>
+                  <li><a href="#">다른 행동</a></li>
+                  <li><a href="#">여기에는 또 다른</a></li>
                   <li class="divider"></li>
-                  <li class="nav-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
+                  <li class="nav-header">탐색 제목</li>
+                  <li><a href="#">따로 떨어진 링크</a></li>
+                  <li><a href="#">따로 떨어진 링크 하나 더</a></li>
                 </ul>
               </li>
             </ul>
             <form class="navbar-form pull-right">
-              <input class="span2" type="text" placeholder="Email">
-              <input class="span2" type="password" placeholder="Password">
-              <button type="submit" class="btn">Sign in</button>
+              <input class="span2" type="text" placeholder="이메일">
+              <input class="span2" type="password" placeholder="암호">
+              <button type="submit" class="btn">로그인</button>
             </form>
           </div><!--/.nav-collapse -->
         </div>
@@ -71,43 +71,43 @@
 
     <div class="container">
 
-      <!-- Main hero unit for a primary marketing message or call to action -->
+      <!-- 핵심 마케팅 문구나 공고를 위한 히어로 유닛 -->
       <div class="hero-unit">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+        <h1>헬로우, 월드!</h1>
+        <p>간단한 마케딩이나 정보 웹사이트를 위한 틀이다. 히어로 유닛이라는 커다란 공간과 세가지 부수적인 내용이 들어있다. 여러분 고유의 웹사이트를 만들 출발점으로 활용하라.</p>
+        <p><a href="#" class="btn btn-primary btn-large">더 알아보기 <span class="en-font-family">&raquo;</span></a></p>
       </div>
 
-      <!-- Example row of columns -->
+      <!-- 열들이 있는 행 예제 -->
       <div class="row">
         <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <h2>제목</h2>
+          <p>보건복지가족부장관 또는 시·도지사는 이 법에 따른 권한의 일부를 대통령령으로 정하는 바에 따라 시·도지사 또는 시장·군수·구청장에게 위임할 수 있다. 필요시 보육시설 유형과 지역적 여건을 고려하여 그 기준을 다르게 정할 수 있다. </p>
+          <p><a class="btn" href="#">자세히 보기 <span class="en-font-family">&raquo;</span></a></p>
         </div>
         <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <h2>제목</h2>
+          <p>보건복지가족부장관 또는 시·도지사는 이 법에 따른 권한의 일부를 대통령령으로 정하는 바에 따라 시·도지사 또는 시장·군수·구청장에게 위임할 수 있다. 필요시 보육시설 유형과 지역적 여건을 고려하여 그 기준을 다르게 정할 수 있다. </p>
+          <p><a class="btn" href="#">자세히 보기 <span class="en-font-family">&raquo;</span></a></p>
        </div>
         <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <h2>제목</h2>
+          <p>국가나 지방자치단체는 국공립보육시설을 설치·운영하여야 한다. 이 경우 국공립보육시설은 제11조의 보육계획에 따라 도시 저소득주민 밀집 주거지역 및 농어촌지역 등 취약지역에 우선적으로 설치하여야 한다. 자격을 검정하고 자격증을 교부하여야 한다.</p>
+          <p><a class="btn" href="#">자세히 보기 <span class="en-font-family">&raquo;</span></a></p>
         </div>
       </div>
 
       <hr>
 
       <footer>
-        <p>&copy; Company 2012</p>
+        <p>&copy; 회사 2013</p>
       </footer>
 
     </div> <!-- /container -->
 
-    <!-- Le javascript
+    <!-- 자바스크립트
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- 페이지를 빨리 읽어들이도록 문서 마지막에 배치 -->
     <script src="../assets/js/jquery.js"></script>
     <script src="../assets/js/bootstrap-transition.js"></script>
     <script src="../assets/js/bootstrap-alert.js"></script>

@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="utf-8">
-    <title>Carousel Template &middot; Bootstrap</title>
+    <title>회전광고판 틀 &middot; 부트스트랩</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- Le styles -->
-    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <!-- 스타일 -->
+    <link href="../assets/css/bootstrap-ko.css" rel="stylesheet">
     <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
     <style>
 
-    /* GLOBAL STYLES
+    /* 전체 스타일
     -------------------------------------------------- */
-    /* Padding below the footer and lighter body text */
+    /* 꼬리말 아래 패딩과 연한색 본문 */
 
     body {
       padding-bottom: 40px;
@@ -23,10 +23,10 @@
 
 
 
-    /* CUSTOMIZE THE NAVBAR
+    /* 탐색막대 수정
     -------------------------------------------------- */
 
-    /* Special class on .container surrounding .navbar, used for positioning it into place. */
+    /* 위치를 잡는 역할을 하는, .navbar를 둘러싸는 .container의 특별한 클래스. */
     .navbar-wrapper {
       position: absolute;
       top: 0;
@@ -34,13 +34,13 @@
       right: 0;
       z-index: 10;
       margin-top: 20px;
-      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
+      margin-bottom: -90px; /* 회전광고판을 올리는 음수 여백. 90px는 대략 탐색막대의 여백과 높이이다. */
     }
     .navbar-wrapper .navbar {
 
     }
 
-    /* Remove border and change up box shadow for more contrast */
+    /* 둘레를 없애고, 대비를 주기위해 상자 그림자를 변경한다 */
     .navbar .navbar-inner {
       border: 0;
       -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
@@ -48,30 +48,30 @@
               box-shadow: 0 2px 10px rgba(0,0,0,.25);
     }
 
-    /* Downsize the brand/project name a bit */
+    /* 상표/프로젝트명 크기를 조금 줄인다 */
     .navbar .brand {
-      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      padding: 14px 20px 16px; /* 탐색막대 링크에 맞도록 수직 패딩을 늘린다 */
       font-size: 16px;
       font-weight: bold;
       text-shadow: 0 -1px 0 rgba(0,0,0,.5);
     }
 
-    /* Navbar links: increase padding for taller navbar */
+    /* 탐색막대 링크: 높은 탐색막대에 맞도록 패딩을 늘린다 */
     .navbar .nav > li > a {
       padding: 15px 20px;
     }
 
-    /* Offset the responsive button for proper vertical alignment */
+    /* 적절하게 수직 정렬하려고 버튼 위치를 조정한다 */
     .navbar .btn-navbar {
       margin-top: 10px;
     }
 
 
 
-    /* CUSTOMIZE THE NAVBAR
+    /* 회전광고판 수정
     -------------------------------------------------- */
 
-    /* Carousel base class */
+    /* 회전광고판 기본 클래스 */
     .carousel {
       margin-bottom: 60px;
     }
@@ -88,6 +88,7 @@
       text-shadow: 0 1px 1px rgba(0,0,0,.4);
       background-color: transparent;
       border: 0;
+      z-index: 10;
     }
 
     .carousel .item {
@@ -121,10 +122,10 @@
 
 
 
-    /* MARKETING CONTENT
+    /* 마케팅 내용
     -------------------------------------------------- */
 
-    /* Center align the text within the three columns below the carousel */
+    /* 회전광고판 아래에 있는 세개 열의 본문을 중앙 정렬한다 */
     .marketing .span4 {
       text-align: center;
     }
@@ -137,21 +138,21 @@
     }
 
 
-    /* Featurettes
+    /* 특집
     ------------------------- */
 
     .featurette-divider {
-      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+      margin: 80px 0; /* 부트스트랩 <hr> 공간을 더 벌린다 */
     }
     .featurette {
-      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
-      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+      padding-top: 120px; /* 수직으로 그림 중앙 위치 1 단계: 본문 위아래로 패딩을 더한다. */
+      overflow: hidden; /* 수직으로 그림 중앙 위치 2 단계: 유동 흐름을 마친다 */
     }
     .featurette-image {
-      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+      margin-top: -120px; /* 수직으로 그림 중앙 위치 3 단계: 중앙에 배치하기위해 패딩과 동일한 크기의 음수 여백으로 그림을 올린다. */
     }
 
-    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    /* 유동 태그 양편에 공간을 두어서 본문과 겹치지 않게 한다. */
     .featurette-image.pull-left {
       margin-right: 40px;
     }
@@ -159,7 +160,7 @@
       margin-left: 40px;
     }
 
-    /* Thin out the marketing headings */
+    /* 마케딩 제목을 얇게 만든다 */
     .featurette-heading {
       font-size: 50px;
       font-weight: 300;
@@ -169,7 +170,7 @@
 
 
 
-    /* RESPONSIVE CSS
+    /* 반응형 CSS
     -------------------------------------------------- */
 
     @media (max-width: 979px) {
@@ -252,12 +253,12 @@
     }
     </style>
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!-- IE6~8에서 HTML5 태그를 지원하기위한 HTML5 shim -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="../assets/js/html5shiv.js"></script>
     <![endif]-->
 
-    <!-- Fav and touch icons -->
+    <!-- 파비콘과 앱 아이콘 -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
@@ -269,38 +270,38 @@
 
 
 
-    <!-- NAVBAR
+    <!-- 탐색막대
     ================================================== -->
     <div class="navbar-wrapper">
-      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <!-- 절대 위치를 지정한 상위 요소 안에서 중앙 정렬하도록 .navbar를 .container로 두른다. -->
       <div class="container">
 
         <div class="navbar navbar-inverse">
           <div class="navbar-inner">
-            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <!-- 유동형 탐색막대 1 단계: 반응형 탐색막대를 여는 버튼 (문서에서 다루지 않음). 반응형 CSS가 필요하다. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
-            </a>
-            <a class="brand" href="#">Project name</a>
-            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            </button>
+            <a class="brand" href="#">프로젝트명</a>
+            <!-- 유동형 탐색막대 2 단계: .navbar-collapse.collapse 안에 숨기고 싶은 모든 탐색막대 내용을 넣는다. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                <li class="active"><a href="#">대문</a></li>
+                <li><a href="#about">소개</a></li>
+                <li><a href="#contact">연락처</a></li>
+                <!-- 부트스트랩 드롭다운은 http://twitter.github.com/bootstrap/javascript.html#dropdowns 을 참고 -->
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">드롭다운 <b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
+                    <li><a href="#">행동</a></li>
+                    <li><a href="#">다른 행동</a></li>
+                    <li><a href="#">여기에는 또 다른</a></li>
                     <li class="divider"></li>
-                    <li class="nav-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
+                    <li class="nav-header">탐색 제목</li>
+                    <li><a href="#">따로 떨어진 링크</a></li>
+                    <li><a href="#">따로 떨어진 링크 하나 더</a></li>
                   </ul>
                 </li>
               </ul>
@@ -313,7 +314,7 @@
 
 
 
-    <!-- Carousel
+    <!-- 회전광고판
     ================================================== -->
     <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
@@ -321,9 +322,9 @@
           <img src="../assets/img/examples/slide-01.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
+              <h1>예제 표제.</h1>
+              <p class="lead">인상파의 개척자이며 지도자로, 파리에서 출생하여 소년 시절을 르아브르에서 보냈다. 그곳에서 터너 등의 작품에 영향을 받아 더욱 밝은 색조에 대한 연구를 하게 되었다.</p>
+              <a class="btn btn-large btn-primary" href="#">가입하세요</a>
             </div>
           </div>
         </div>
@@ -331,9 +332,9 @@
           <img src="../assets/img/examples/slide-02.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Learn more</a>
+              <h1>다른 예제 표제.</h1>
+              <p class="lead">인상파의 개척자이며 지도자로, 파리에서 출생하여 소년 시절을 르아브르에서 보냈다. 그곳에서 터너 등의 작품에 영향을 받아 더욱 밝은 색조에 대한 연구를 하게 되었다.</p>
+              <a class="btn btn-large btn-primary" href="#">더 알아보기</a>
             </div>
           </div>
         </div>
@@ -341,92 +342,92 @@
           <img src="../assets/img/examples/slide-03.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+              <h1>추가로 하나 더.</h1>
+              <p class="lead">인상파의 개척자이며 지도자로, 파리에서 출생하여 소년 시절을 르아브르에서 보냈다. 그곳에서 터너 등의 작품에 영향을 받아 더욱 밝은 색조에 대한 연구를 하게 되었다.</p>
+              <a class="btn btn-large btn-primary" href="#">갤러리 둘러보기</a>
             </div>
           </div>
         </div>
       </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="en-font-family">&lsaquo;</span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="en-font-family">&rsaquo;</span></a>
     </div><!-- /.carousel -->
 
 
 
-    <!-- Marketing messaging and featurettes
+    <!-- 마케팅 문구와 특집
     ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
+    <!-- 모든 내용을 중앙 정렬하기위해 나머지 페이지를 다른 container로 두른다. -->
 
     <div class="container marketing">
 
-      <!-- Three columns of text below the carousel -->
+      <!-- 회전광고판 아래에 있는 세개 열 -->
       <div class="row">
         <div class="span4">
           <img class="img-circle" data-src="holder.js/140x140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <h2>제목</h2>
+          <p>유명한 사원에는 난파야, 슈에다곤, 아난다 사원 등 11세기에 건립된 것과 13세기의 밍가라제디 사원 등이 있다. 아난다사는 인도의 불탑형식을 뒤섞어 버마풍으로 재구성한 구조형식으로 알려져 있다. 근세에 재건한 랑군에 있는 슈에다곤사에는 약 110m의 탑이 있다.</p>
+          <p><a class="btn" href="#">자세히 보기 <span class="en-font-family">&raquo;</span></a></p>
         </div><!-- /.span4 -->
         <div class="span4">
           <img class="img-circle" data-src="holder.js/140x140">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <h2>제목</h2>
+          <p>특히 12세기 초 수리아바 르만 2세가 앙코르 와트를 건립함에 이르러 크메르 건축은 발달의 정점에 달하였다. 13세기 건립의 바이욘은 불교사원 건축으로 앙코르 와트와 유사한 구조를 갖고 있으나 고탑일면에 기괴할 정도로 큰 미소를 머금은 인면을 표현한 의장 등은 그 기발한 면에서 일경을 금할 수 없다.</p>
+          <p><a class="btn" href="#">자세히 보기 <span class="en-font-family">&raquo;</span></a></p>
         </div><!-- /.span4 -->
         <div class="span4">
           <img class="img-circle" data-src="holder.js/140x140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <h2>제목</h2>
+          <p>바이온사원, 파괴된 왕궁, 그곳에 있는 천상의 궁전 파미아나카스사원이 있고, 개선한 군단이 지나가는 승리의 문(성문의 하나)이 있다. 이 밖에 불교사원 프리아파리라이, 절, 테프프라남, 10세기 말에서 12세기 초에 걸쳐서 건립된 사원과 사당 등이 있다.</p>
+          <p><a class="btn" href="#">자세히 보기 <span class="en-font-family">&raquo;</span></a></p>
         </div><!-- /.span4 -->
       </div><!-- /.row -->
 
 
-      <!-- START THE FEATURETTES -->
+      <!-- 특집 시작 -->
 
       <hr class="featurette-divider">
 
       <div class="featurette">
         <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-chrome.png">
-        <h2 class="featurette-heading">First featurette headling. <span class="muted">It'll blow your mind.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <h2 class="featurette-heading">첫번째 특집 제목. <span class="muted">완전히 빠져들 것이다.</span></h2>
+        <p class="lead">프레스코의 마무리에 사용되는 일도 허다하다. 가장 성하게 된 것은 중세 말기에서 이탈리아 르네상스 초기에 걸쳐서이고 치마부에 조토를 비롯하여 기를란다요, 보티첼리 등이 템페라화를 남기고 있다. 15세기 이후는 유화에 눌려 스러졌다.</p>
       </div>
 
       <hr class="featurette-divider">
 
       <div class="featurette">
         <img class="featurette-image pull-left" src="../assets/img/examples/browser-icon-firefox.png">
-        <h2 class="featurette-heading">Oh yeah, it's that good. <span class="muted">See for yourself.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <h2 class="featurette-heading">정말 좋다. <span class="muted">직접 사용해 보라.</span></h2>
+        <p class="lead">프레스코의 마무리에 사용되는 일도 허다하다. 가장 성하게 된 것은 중세 말기에서 이탈리아 르네상스 초기에 걸쳐서이고 치마부에 조토를 비롯하여 기를란다요, 보티첼리 등이 템페라화를 남기고 있다. 15세기 이후는 유화에 눌려 스러졌다.</p>
       </div>
 
       <hr class="featurette-divider">
 
       <div class="featurette">
         <img class="featurette-image pull-right" src="../assets/img/examples/browser-icon-safari.png">
-        <h2 class="featurette-heading">And lastly, this one. <span class="muted">Checkmate.</span></h2>
-        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <h2 class="featurette-heading">그리고 마지막이다. <span class="muted">이상 끝.</span></h2>
+        <p class="lead">프레스코의 마무리에 사용되는 일도 허다하다. 가장 성하게 된 것은 중세 말기에서 이탈리아 르네상스 초기에 걸쳐서이고 치마부에 조토를 비롯하여 기를란다요, 보티첼리 등이 템페라화를 남기고 있다. 15세기 이후는 유화에 눌려 스러졌다.</p>
       </div>
 
       <hr class="featurette-divider">
 
-      <!-- /END THE FEATURETTES -->
+      <!-- 특집 /끝 -->
 
 
-      <!-- FOOTER -->
+      <!-- 꼬리말 -->
       <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2012 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p class="pull-right"><a href="#">제일 위로</a></p>
+        <p>&copy; 2013 회사. &middot; <a href="#">개인정보취급방침</a> &middot; <a href="#">이용약관</a></p>
       </footer>
 
     </div><!-- /.container -->
 
 
 
-    <!-- Le javascript
+    <!-- 자바스크립트
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- 페이지를 빨리 읽어들이도록 문서 마지막에 배치 -->
     <script src="../assets/js/jquery.js"></script>
     <script src="../assets/js/bootstrap-transition.js"></script>
     <script src="../assets/js/bootstrap-alert.js"></script>
@@ -448,5 +449,6 @@
         })
       }(window.jQuery)
     </script>
+    <script src="../assets/js/holder/holder.js"></script>
   </body>
 </html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>틀 &middot; 부트스트랩</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- 스타일 -->
+    <link href="../assets/css/bootstrap-ko.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 60px;
+      }
+
+      /* 전체 내용을 감쌈 */
+      .container {
+        margin: 0 auto;
+        max-width: 1000px;
+      }
+      .container > hr {
+        margin: 60px 0;
+      }
+
+      /* 핵심 마케팅 문구와 가입 버튼 */
+      .jumbotron {
+        margin: 80px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 100px;
+        line-height: 1;
+      }
+      .jumbotron .lead {
+        font-size: 24px;
+        line-height: 1.25;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* 부수적인 마케팅 내용 */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+
+
+      /* 탐색막대 링크가 .navbar 공간을 모두 채우도록 변경 */
+      .navbar .navbar-inner {
+        padding: 0;
+      }
+      .navbar .nav {
+        margin: 0;
+        display: table;
+        width: 100%;
+      }
+      .navbar .nav li {
+        display: table-cell;
+        width: 1%;
+        float: none;
+      }
+      .navbar .nav li a {
+        font-weight: bold;
+        text-align: center;
+        border-left: 1px solid rgba(255,255,255,.75);
+        border-right: 1px solid rgba(0,0,0,.1);
+      }
+      .navbar .nav li:first-child a {
+        border-left: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .navbar .nav li:last-child a {
+        border-right: 0;
+        border-radius: 0 3px 3px 0;
+      }
+    </style>
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- IE6~8에서 HTML5 태그를 지원하기위한 HTML5 shim -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- 파비콘과 앱 아이콘 -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="masthead">
+        <h3 class="muted">프로젝트명</h3>
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="container">
+              <ul class="nav">
+                <li class="active"><a href="#">대문</a></li>
+                <li><a href="#">프로젝트</a></li>
+                <li><a href="#">서비스</a></li>
+                <li><a href="#">다운로드</a></li>
+                <li><a href="#">소개</a></li>
+                <li><a href="#">연락처</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- /.navbar -->
+      </div>
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <h1>마케팅 문구!</h1>
+        <p class="lead">그리스의 천문학자. 알렉산드리아 도서관에서 일했으며, 세계에서 제일 먼저 지동설을 믿은 사람으로 전해지고 있다. 또한 기하학을 응용하여 태양이나 달의 크기를 처음으로 계산하였다.</p>
+        <a class="btn btn-large btn-success" href="#">바로 시작하세요</a>
+      </div>
+
+      <hr>
+
+      <!-- 열들이 있는 행 예제 -->
+      <div class="row-fluid">
+        <div class="span4">
+          <h2>제목</h2>
+          <p>보건복지가족부장관 또는 시·도지사는 이 법에 따른 권한의 일부를 대통령령으로 정하는 바에 따라 시·도지사 또는 시장·군수·구청장에게 위임할 수 있다. 필요시 보육시설 유형과 지역적 여건을 고려하여 그 기준을 다르게 정할 수 있다. </p>
+          <p><a class="btn" href="#">자세히 보기 <span class="en-font-family">&raquo;</span></a></p>
+        </div>
+        <div class="span4">
+          <h2>제목</h2>
+          <p>보건복지가족부장관 또는 시·도지사는 이 법에 따른 권한의 일부를 대통령령으로 정하는 바에 따라 시·도지사 또는 시장·군수·구청장에게 위임할 수 있다. 필요시 보육시설 유형과 지역적 여건을 고려하여 그 기준을 다르게 정할 수 있다. </p>
+          <p><a class="btn" href="#">자세히 보기 <span class="en-font-family">&raquo;</span></a></p>
+       </div>
+        <div class="span4">
+          <h2>제목</h2>
+          <p>공제회에 가입한 보육시설은 공제사업의 수행에 필요한 출자금 등을 공제회에 납부하여야 한다. 공제회의 회원자격, 임원에 관한 사항 및 출자금의 부담기준에 관한 사항은 정관으로 정한다. 의료기관의 장은 적절한 조치를 취하여야 한다.</p>
+          <p><a class="btn" href="#">자세히 보기 <span class="en-font-family">&raquo;</span></a></p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="footer">
+        <p>&copy; 회사 2013</p>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- 자바스크립트
+    ================================================== -->
+    <!-- 페이지를 빨리 읽어들이도록 문서 마지막에 배치 -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
