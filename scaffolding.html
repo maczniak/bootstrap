@@ -25,16 +25,13 @@
                     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
                                    <link rel="shortcut icon" href="assets/ico/favicon.png">
 
-    <script type="text/javascript">
-      window['ga-disable-UA-146052-10'] = true;
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-146052-10']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-146052-10', 'getbootstrap.com');
+      ga('send', 'pageview');
     </script>
   </head>
 
@@ -86,10 +83,15 @@
   <div class="container">
     <h1>틀 만들기</h1>
     <p class="lead">반응형 12개 열 격자와 레이아웃 그리고 화면 구성요소들을 기반으로 삼는다.</p>
+    <div id="carbonads-container"><div class="carbonad"><div id="azcarbon"></div><script type="text/javascript">var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = "http://engine.carbonads.com/z/32341/azcarbon_2_1_0_HORIZDARK"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script></div></div>
   </div>
 </header>
 
   <div class="container">
+
+    <div class="alert alert-danger bs-alert-old-docs">
+      <strong>주의!</strong> 더 이상 공식지원하지 않는 v2.3.2 문서이다. <a href="http://getbootstrap.com">최신 버전 부트스트랩을 확인하라!</a>
+    </div>
 
     <!-- Docs nav
     ================================================== -->
@@ -574,9 +576,9 @@
         <ul class="footer-links">
           <li><a href="http://blog.getbootstrap.com">블로그</a></li>
           <li class="muted">&middot;</li>
-          <li><a href="https://github.com/twitter/bootstrap/issues?state=open">문제점</a></li>
+          <li><a href="https://github.com/twbs/bootstrap/issues?state=open">문제점</a></li>
           <li class="muted">&middot;</li>
-          <li><a href="https://github.com/twitter/bootstrap/blob/master/CHANGELOG.md">수정사항</a></li>
+          <li><a href="https://github.com/twbs/bootstrap/releases">수정사항</a></li>
         </ul>
       </div>
     </footer>
